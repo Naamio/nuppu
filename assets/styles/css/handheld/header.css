@@ -5,6 +5,8 @@
  */
  
 header {
+    background: var(--primary-complimentary-color);
+    background: linear-gradient(20deg, var(--primary-action-color) -20%, var(--primary-background-color) 50%, var(--primary-complimentary-color) 110%);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     height: 50vh;
@@ -12,4 +14,11 @@ header {
 
 header > * {
     grid-column: span 10 / 12;
+}
+
+header section {
+    align-items: flex-start;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
 }

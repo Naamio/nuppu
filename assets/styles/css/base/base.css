@@ -4,6 +4,18 @@
  * Omnijar Studio
  */
 
+:root {
+    --sans-serif-font: "Montserrat", Arial, Helvetica, sans-serif;
+    --text-color: rgba(139,139,139,1);
+    --strong-text-color: rgba(102,102,102,1);
+    --soft-background-color: rgba(242,242,242,1);
+    --primary-action-color: rgba(0,179,170,1);
+    --primary-complimentary-color: rgba(0,184,230,1);
+    --primary-background-color: rgba(0,115,230,1);
+    --secondary-complimentary-color: rgba(0,137,179,1);
+    --secondary-background-color: rgba(0,89,179,1);
+}
+
 html {
     font-size: 16px;
 }
