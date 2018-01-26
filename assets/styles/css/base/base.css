@@ -17,3 +17,8 @@ h1 {
     margin-top: auto;
     text-align: center;
 }
+
+svg {
+    max-height: 100px;
+    max-width: 100px;
+}
