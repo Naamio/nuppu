@@ -1,0 +1,9 @@
+/**
+ * screen.css
+ * Project: Nuppu
+ * Naamio
+ */
+
+@import url("./screen/header.css");
+@import url("./screen/main.css");
+@import url("./screen/footer.css");

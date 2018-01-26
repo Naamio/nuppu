@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="U-8TF"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" 
     xml:lang="en" 
@@ -8,6 +8,9 @@
     <head>
         <!--Meta Data-->
         <title>Naamio</title>
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="{% asset "/styles/css/handheld.css" %}" media="screen" type="text/css" />
+        <link rel="stylesheet" href="{% asset "/styles/css/screen.css" %}" media="screen and (min-width: 667px)" type="text/css" />
     </head>
     <body>
     
@@ -23,7 +26,7 @@
             <h1>Naamio</h1>
         </header>
         <main role="main">
-            <section>
+            <section class="intro">
                 <blockquote>
                     Naamio Naamio is light and fast - get your site live, online in a matter of minutes with full 
                     security and scalability as default.

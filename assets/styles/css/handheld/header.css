@@ -1,0 +1,15 @@
+/**
+ * header.css
+ * Project: Nuppu
+ * Omnijar Studio
+ */
+ 
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 50vh;
+}
+
+header > * {
+    grid-column: span 10 / 12;
+}

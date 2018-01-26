@@ -1,0 +1,16 @@
+/**
+ * main.css
+ * Project: Nuppu
+ * Omnijar Studio
+ */
+ 
+.intro,
+main > section:not(.intro) > * {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.intro > *,
+main > section > * > * {
+    grid-column: span 10 / 12;
+}

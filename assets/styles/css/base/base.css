@@ -10,11 +10,9 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
-header,
-main section > *,
-footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+h1 {
+    text-align: center;
 }

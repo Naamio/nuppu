@@ -1,0 +1,20 @@
+/**
+ * screen/main.css
+ * Project: Nuppu
+ * Omnijar Studio
+ */
+
+@media (min-width: 670px) {
+    
+    .intro,
+    main > section:not(.intro) > * {
+        grid-column-gap: 1em;
+        padding-left: calc(50vw - 520px);
+        padding-right: calc(50vw - 520px);
+    }
+
+    .intro > *,
+    main > section > * > * {
+        grid-column: span 8 / 11;
+    }
+}
