@@ -13,6 +13,10 @@
     h2 {
         font-size: 3em;
     }
+
+    .highlights h2 {
+        margin-top: -2.4rem;
+    }
     
     h3 {
         font-size: 1.375em;
@@ -23,14 +27,23 @@
     }
 
     .intro,
-    main > section:not(.intro) > * {
+    .highlights > div,
+    .details {
         grid-column-gap: 1em;
         padding-left: calc(50vw - 520px);
         padding-right: calc(50vw - 520px);
     }
 
     .intro > *,
-    main > section > * > * {
+    .highlights > div > * ,
+    .details > div {
         grid-column: span 8 / 11;
+    }
+}
+
+@media (min-width: 1080px) {
+    .details div {
+        grid-column: span 4;
+        padding-right: calc(1040px/12);
     }
 }

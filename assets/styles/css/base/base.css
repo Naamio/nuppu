@@ -68,12 +68,16 @@ h3 {
 }
 
 blockquote {
+    border-left: 3.5px dashed var(--primary-action-color);
     font-size: 1em;
     font-style: italic;
     font-weight: 300;
+    padding-left: 1em;
 }
 
 button {
+    background-color: white;
+    color: var(--primary-action-color);
     cursor: pointer;
     font-weight: 700;
     text-transform: uppercase;

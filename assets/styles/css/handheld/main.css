@@ -3,24 +3,77 @@
  * Project: Nuppu
  * Omnijar Studio
  */
- 
+
+ main section > *:not(blockquote) {
+    padding-bottom: 4em;
+}
+
 .intro,
-main > section:not(.intro) > * {
+.highlights > div,
+.details {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
 .intro > *,
-main > section > * > * {
+.highlights > div > * ,
+.details > div {
     grid-column: span 10 / 12;
 }
 
 .intro {
+    grid-template-rows: min-content;
     margin-top: 10vh;
-    min-height: 30vh;
+    min-height: 40vh;
 }
 
-.detail p {
+.details p {
     font-size: 0.8em;
 }
 
+.highlights h2 {
+    margin-top: -1.6rem;
+}
+
+.highlights div {
+    padding-bottom: 6rem;
+}
+
+.highlights div:nth-child(1) p,
+.highlights div:nth-child(2) h2,
+.highlights div:nth-child(3) p {
+    color: white;
+}
+
+.highlights div:nth-child(1) {
+    background-color: var(--secondary-complimentary-color);
+}
+
+.highlights div:nth-child(1) h2 {
+    color: var(--secondary-complimentary-color);
+}
+
+
+.highlights div:nth-child(3) {
+    background-color: var(--secondary-background-color);
+}
+
+.highlights div:nth-child(3) h2 {
+    color: var(--secondary-background-color);
+}
+
+.details div:nth-child(1) h3 {
+    color: var(--primary-background-color);
+}
+
+.details div:nth-child(2) h3 {
+    color: var(--primary-complimentary-color);
+}
+
+.details div:nth-child(3) h3 {
+    color: var(--primary-action-color);
+}
+
+.details div {
+    grid-auto-columns: minmax(6em, 8fr);
+}
