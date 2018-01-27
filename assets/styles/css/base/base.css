@@ -105,6 +105,11 @@ button {
     text-transform: uppercase;
 }
 
+button:hover {
+    background-color: var(--primary-action-color);
+    color: white;
+}
+
 button p {
     margin: 0;
 }
@@ -118,6 +123,18 @@ form {
 form button {
     background-color: var(--primary-action-color);
     color: white;
+    margin-top: 2em;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: var(--primary-background-color);
+    transition: 0.3s;
+}
+
+form button:active {
+    background-color: var(--primary-background-color);
+    transition: 0.3s;
 }
 
 fieldset button {
@@ -164,8 +181,4 @@ label.required::after {
 textarea {
     line-height: 1.5;
     resize: vertical;
-}
-
-fieldset button {
-    margin-top: 2em;
 }
