@@ -50,12 +50,12 @@ h1, h2, h3 {
 
 h1 {
     color: white;
-    font-size: 3em;
+    font-size: 2.3em;
 }
 
 h2 {
     color: var(--primary-background-color);
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 label {
@@ -63,6 +63,7 @@ label {
     font-size: 0.8em;
     font-style: italic;
     font-weight: 300;
+    position: relative;
 }
 
 legend {
@@ -143,7 +144,21 @@ textarea {
     margin-bottom: 1em;
     min-width: 10rem;
     padding: 1em 1em;
+    position: relative;
     width: 100%;
+}
+
+label.required::after {
+    color: var(--primary-action-color);
+    content: "*";
+    font-size: 2.3em;
+    font-style: normal;
+    font-weight: 700;
+    left: calc(100% - 0.7em);
+    position: absolute;
+    top: 0.6em;
+    width: 100%;
+    z-index: 2;
 }
 
 textarea {

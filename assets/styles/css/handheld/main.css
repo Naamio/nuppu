@@ -24,6 +24,8 @@
 
 .contact form {
     grid-column: span 12 / 13;
+    margin-bottom: 6em;
+    padding-bottom: 2em;
 }
 
 .intro {
@@ -37,7 +39,7 @@
 }
 
 .highlights h2 {
-    margin-top: -1.6rem;
+    margin-top: -1.9rem;
 }
 
 .highlights div {

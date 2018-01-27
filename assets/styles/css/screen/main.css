@@ -37,9 +37,13 @@
 
     .intro > *,
     .highlights > div > * ,
-    .details > div,
-    .contact form {
+    .details > div {
         grid-column: span 8 / 11;
+    }
+
+    .contact form {
+        grid-column: span 10 / 12;
+        margin-top: 6em;
     }
 }
 
