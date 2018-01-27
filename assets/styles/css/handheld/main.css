@@ -19,3 +19,8 @@ main > section > * > * {
     margin-top: 10vh;
     min-height: 30vh;
 }
+
+.detail p {
+    font-size: 0.8em;
+}
+
