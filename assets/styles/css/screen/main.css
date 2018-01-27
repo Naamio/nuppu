@@ -28,7 +28,8 @@
 
     .intro,
     .highlights > div,
-    .details {
+    .details,
+    .contact {
         grid-column-gap: 1em;
         padding-left: calc(50vw - 520px);
         padding-right: calc(50vw - 520px);
@@ -36,7 +37,8 @@
 
     .intro > *,
     .highlights > div > * ,
-    .details > div {
+    .details > div,
+    .contact form {
         grid-column: span 8 / 11;
     }
 }
@@ -44,6 +46,6 @@
 @media (min-width: 1080px) {
     .details div {
         grid-column: span 4;
-        padding-right: calc(1040px/12);
+        padding-left: calc(1040px/12);
     }
 }

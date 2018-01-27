@@ -10,7 +10,8 @@
 
 .intro,
 .highlights > div,
-.details {
+.details,
+.contact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -19,6 +20,10 @@
 .highlights > div > * ,
 .details > div {
     grid-column: span 10 / 12;
+}
+
+.contact form {
+    grid-column: span 12 / 13;
 }
 
 .intro {

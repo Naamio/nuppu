@@ -28,7 +28,7 @@
         <main role="main">
             <section class="intro">
                 <blockquote>
-                    Naamio Naamio is light and fast - get your site live, online in a matter of minutes with full 
+                    Naamio is light and fast - get your site live, online in a matter of minutes with full 
                     security and scalability as default.
                 </blockquote>
             </section>
@@ -65,13 +65,16 @@
                     </p>
                 </div>
             </section>
-            <section>
+            <section class="contact">
                 <form>
                     <legend>Contact Us</legend>
                     <fieldset>
-                        <input type="name" />
-                        <input type="email" />
-                        <input type="text" />
+                        <label for="name">Your name</label>
+                        <input id="name" type="name" placeholder="your name" required="required" />
+                        <label for="email">Email address</label>
+                        <input id="email" type="email" placeholder="name@host.tld" required="required" />
+                        <label for="message">Message</label>
+                        <input id="message" type="text" placeholder="do you have a question?"/>
                         <button type="submit">
                             <p>Get in touch</p>
                         </button>
