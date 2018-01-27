@@ -14,3 +14,8 @@ main > section:not(.intro) > * {
 main > section > * > * {
     grid-column: span 10 / 12;
 }
+
+.intro {
+    margin-top: 10vh;
+    min-height: 30vh;
+}
