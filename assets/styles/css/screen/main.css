@@ -36,9 +36,21 @@
     }
 
     .intro > *,
-    .highlights > div > * ,
-    .details > div {
+    .highlights > div > * {
         grid-column: span 8 / 11;
+    }
+
+    .details > div {
+        grid-column: span 4 / 9;
+    }
+
+    .details h3 {
+        transform: rotate(-90deg) translate(-100%, -1em);
+    }
+
+    .details p {
+        margin-top: -2em;
+        padding-left: 0;
     }
 
     .contact form {
@@ -51,5 +63,9 @@
     .details div {
         grid-column: span 4;
         padding-left: calc(1040px/12);
+    }
+
+    .details h3 {
+        transform: rotate(-90deg) translate(-100%, -0.5em);
     }
 }

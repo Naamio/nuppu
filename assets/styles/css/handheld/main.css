@@ -69,6 +69,17 @@
     color: var(--secondary-background-color);
 }
 
+.details h3 {
+    text-align: right;
+    transform: rotate(-90deg) translate(-100%, 1em);
+    transform-origin: bottom left;
+}
+
+.details p {
+    margin-top: -1.5em;
+    padding-left: 2em;
+}
+
 .details div:nth-child(1) h3 {
     color: var(--primary-background-color);
 }
