@@ -4,6 +4,11 @@
  * Omnijar Studio
  */
  
+header button {
+    display: none;
+    visibility: hidden;
+}
+
 header {
     background: var(--primary-complimentary-color);
     background: linear-gradient(20deg, var(--primary-action-color) -20%, var(--primary-background-color) 50%, var(--primary-complimentary-color) 110%);

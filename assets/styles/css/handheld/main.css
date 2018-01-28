@@ -16,6 +16,10 @@
     grid-template-columns: repeat(12, 1fr);
 }
 
+.details {
+    margin-bottom: 4em;
+}
+
 .intro > *,
 .highlights > div > * ,
 .details > div {
@@ -43,7 +47,7 @@
 }
 
 .highlights div {
-    padding-bottom: 6rem;
+    padding-bottom: 8em;
 }
 
 .highlights div:nth-child(1) p,

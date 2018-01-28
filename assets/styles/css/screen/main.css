@@ -15,6 +15,7 @@
     }
 
     .highlights h2 {
+        margin-left: calc(-100% / 8);
         margin-top: -2.4rem;
     }
     
