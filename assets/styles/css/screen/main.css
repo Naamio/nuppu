@@ -5,6 +5,9 @@
  */
 
 @media (min-width: 670px) {
+    header svg {
+        max-width: 5em;
+    }
 
     h1 {
         font-size: 3.25em;
