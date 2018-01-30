@@ -116,9 +116,6 @@ button:hover {
     color: white;
 }
 
-button p {
-    margin: 0;
-}
 
 form {
     background-color: var(--soft-background-color);
@@ -130,6 +127,8 @@ form button {
     background-color: var(--primary-action-color);
     color: white;
     margin-top: 2em;
+    position: relative;
+    padding: 0;
     transition: 0.3s;
 }
 
@@ -139,7 +138,20 @@ form button:hover {
 }
 
 form button:active {
-    background-color: var(--primary-background-color);
+    background-color: var(--secondary-background-color);
+    transition: 0.3s;
+}
+
+button p {
+    box-sizing: border-box;
+    line-height: 2.2;
+    margin: 0;
+    padding: 0.6em 2em 0.4em 2rem; 
+    width: 100%;
+}
+
+button p,
+button:hover p {
     transition: 0.3s;
 }
 
