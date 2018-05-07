@@ -1,0 +1,18 @@
+/**
+ * screen/footer.css
+ * Project: Nuppu
+ * Omnijar Studio
+ */
+
+@media (min-width: 670px) {
+    
+    footer {
+        grid-column-gap: 1em;
+        padding-left: calc(50vw - 520px);
+        padding-right: calc(50vw - 520px);
+    }
+
+    footer > * {
+        grid-column: span 8 / 11;
+    }
+}

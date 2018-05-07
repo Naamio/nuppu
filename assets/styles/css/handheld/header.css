@@ -1,0 +1,31 @@
+/**
+ * header.css
+ * Project: Nuppu
+ * Omnijar Studio
+ */
+ 
+header button {
+    display: none;
+    visibility: hidden;
+}
+
+header {
+    background: var(--primary-complimentary-color);
+    background: linear-gradient(20deg, var(--primary-action-color) -20%, var(--primary-background-color) 50%, var(--primary-complimentary-color) 110%);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    min-height: 50vh;
+}
+
+header > * {
+    grid-column: span 10 / 12;
+}
+
+header section {
+    align-items: flex-start;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
