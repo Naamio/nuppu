@@ -1,0 +1,101 @@
+/**
+ * main.css
+ * Project: Nuppu
+ * Omnijar Studio
+ */
+
+ main section > *:not(blockquote) {
+    padding-bottom: 4em;
+}
+
+.intro,
+.highlights > div,
+.details,
+.contact {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.details {
+    margin-bottom: 4em;
+}
+
+.intro > *,
+.highlights > div > * ,
+.details > div {
+    grid-column: span 10 / 12;
+}
+
+.contact form {
+    grid-column: span 12 / 13;
+    margin-bottom: 6em;
+    padding-bottom: 2em;
+}
+
+.intro {
+    grid-template-rows: min-content;
+    margin-top: 10vh;
+    min-height: 40vh;
+}
+
+.details p {
+    font-size: 0.8em;
+}
+
+.highlights h2 {
+    margin-top: -1.9rem;
+}
+
+.highlights div {
+    padding-bottom: 8em;
+}
+
+.highlights div:nth-child(1) p,
+.highlights div:nth-child(2) h2,
+.highlights div:nth-child(3) p {
+    color: white;
+}
+
+.highlights div:nth-child(1) {
+    background-color: var(--secondary-complimentary-color);
+}
+
+.highlights div:nth-child(1) h2 {
+    color: var(--secondary-complimentary-color);
+}
+
+
+.highlights div:nth-child(3) {
+    background-color: var(--secondary-background-color);
+}
+
+.highlights div:nth-child(3) h2 {
+    color: var(--secondary-background-color);
+}
+
+.details h3 {
+    text-align: right;
+    transform: rotate(-90deg) translate(-100%, 1em);
+    transform-origin: bottom left;
+}
+
+.details p {
+    margin-top: -1.5em;
+    padding-left: 2em;
+}
+
+.details div:nth-child(1) h3 {
+    color: var(--primary-background-color);
+}
+
+.details div:nth-child(2) h3 {
+    color: var(--primary-complimentary-color);
+}
+
+.details div:nth-child(3) h3 {
+    color: var(--primary-action-color);
+}
+
+.details div {
+    grid-auto-columns: minmax(6em, 8fr);
+}
