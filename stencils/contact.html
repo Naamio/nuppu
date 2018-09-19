@@ -1,0 +1,27 @@
+{% extends "layouts.default.html" %}
+<main role="main">
+    <section>
+        <blockquote>
+            Naamio is light and fast - get your site live, online in a matter of minutes with full 
+            security and scalability as default.
+        </blockquote>
+    </section>
+    <section>
+        <form>
+            <legend>Find out more</legend>
+            <fieldset>
+                <div>
+                    <label for="name" class="required" title="required" >Your name</label>
+                    <input id="name" type="name" placeholder="your name" required="required" />
+                    <label for="email" class="required" title="required" >Email address</label>
+                    <input id="email" type="email" placeholder="name@host.tld" required="required" />
+                </div>
+                <label for="message">Optional message</label>
+                <textarea id="message" type="text" placeholder="do you have a question?"/>
+                <button type="submit">
+                    Send
+                </button>
+            </fieldset>
+        </form>
+    </section>
+</main>

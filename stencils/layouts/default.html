@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="U-8TF"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" 
     xml:lang="en" 
@@ -8,18 +8,21 @@
     <head>
         <!--Meta Data-->
         <title>Naamio</title>
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="{% asset "/styles/css/handheld.css" %}" media="screen" type="text/css" />
+        <link rel="stylesheet" href="{% asset "/styles/css/screen.css" %}" media="screen and (min-width: 667px)" type="text/css" />
     </head>
     <body>
         {% if partials.header %}
             {% block header %}
-                {% include "_partials/header.html" %}
+                {% include "partials/header.html" %}
             {% end block %}
         {% endif %}
         {% block content %}
         {% end block %}
         {% if partials.footer %}
             {% block footer %}
-                {% include "_partials/footer.html" %}
+                {% include "partials/footer.html" %}
             {% end block %}
         {% endif %}
     </body>
