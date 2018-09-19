@@ -1,0 +1,50 @@
+{
+  "name": "nuppu",
+  "version": "0.0.0",
+  "description": "Nuppu is the code name for the Naamio project web application.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c build/rollup.config.js --environment INCLUDE_DEPS,BUILD:development",
+    "test": "export TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' && mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Naamio/nuppu.git"
+  },
+  "keywords": [
+    "web application",
+    "web",
+    "publishing platform",
+    "scalable",
+    "web standards",
+    "publishing",
+    "blogging",
+    "articles",
+    "social platform"
+  ],
+  "author": "Gabrielle Iskandar <gabiskandar@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.5",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "rollup": "^0.66.0",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-typescript2": "^0.17.0",
+    "rollup-plugin-uglify": "^5.0.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "node": "^10.10.0"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/Naamio/nuppu/issues"
+  },
+  "homepage": "https://gitlab.com/Naamio/nuppu#readme",
+  "directories": {
+    "lib": "lib"
+  }
+}

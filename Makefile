@@ -1,7 +1,7 @@
 # Build Output Directories
 CONTAINER_NAME = nuppu
 CONTAINER_VERSION = 0.0
-CONTAINER_URL = omnijarcoffee/$(CONTAINER_NAME):$(CONTAINER_VERSION)
+CONTAINER_URL = naamio/$(CONTAINER_NAME):$(CONTAINER_VERSION)
 
 NPM_BIN = $(shell npm bin)
 
