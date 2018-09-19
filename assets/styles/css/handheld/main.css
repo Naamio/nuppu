@@ -7,12 +7,100 @@
 main > section {
     background-color: var(--light-neutral-color);
     min-height: 100vh;
-    position: sticky;
-    top: 0;
     width: 100%;
 }
 
-main > section.text-left > div {
+main > section {
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding: 10%;   
+}
+
+main > section.full-width-feature {
+    padding: 0;
+}
+
+main > section.features > div {
+    max-width: 56ch;
+    min-width: 16em;
     width: 50%;
 }
 
+section.features div > svg {
+    max-width: 30em;
+    padding: 10%;
+}
+
+section.questions-contact {
+    background-color: var(--dark-neutral-color);
+    color: var(--light-neutral-color);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    width: 100%;
+}
+
+section.questions-contact h2,
+section.questions-contact h2 strong,
+section.questions-contact p {
+    color: var(--light-neutral-color);
+}
+
+section.questions-contact > div {
+    align-content: center;
+    -webkit-align-content: center;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    width: 100%;
+}
+
+div.button-container {
+    flex-grow: 1;
+}
+
+section#breadcrumbs {
+    background-color: var(--light-neutral-color);
+    color: var(--dark-neutral-color);
+    height: 4em;
+    min-height: unset;
+    padding: 0;
+    width: 100%;
+}
+
+.full-width-feature div {
+    min-height: 50vh;
+}
+
+blockquote::before,
+blockquote::after {
+    background-image: var(--brand-gradient);
+    content: "";
+    display: block;
+    height: 0.2em;
+    left: 10%;
+    position: absolute;
+    width: 80%;
+}
+
+blockquote::before {
+    top: -2em;
+}
+
+blockquote::after {
+    bottom: -2em;
+}
+
+section.features.small {
+    flex-direction: column;
+}

@@ -4,3 +4,59 @@
  * Naamio
  */
  
+footer {
+    align-items: center;
+    -webkit-align-items: center;
+    background-color: var(--dark-neutral-color);
+    color: var(--light-neutral-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    -webkit-justify-items: center;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
+    max-width: 100%;
+    min-height: 50vh;
+}
+
+footer > * {
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+    margin: 2em;
+    min-width: 14em;
+    width: 100%;
+}
+
+footer > ul.social-box {
+    list-style: none;
+    padding: 0;
+}
+
+footer > .badge-box {
+    align-content: flex-end;
+    flex-grow: 2;
+}
+
+ul.social-box a {
+    align-items: center;
+    -webkit-align-items: center;
+    color: var(--light-neutral-color);
+    cursor: pointer;
+    display: flex;
+    display: -webkit-flex;
+    font-size: 0.8em;
+    font-weight: 400;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    letter-spacing: 0.1em;
+    margin: 2em 0.5em;
+    opacity: 0.8;
+}
+
+ul.social-box a svg {
+    margin-right: 1em;
+}

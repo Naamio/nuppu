@@ -4,5 +4,8 @@
  * Naamio
  */
 
-@media (min-width: 670px) {
+@media (min-width: 667px) {
+    section.questions-contact > div {
+        width: unset;
+    }
 }

@@ -1,29 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" 
-    xml:lang="en" 
-    xmlns:svg="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink">
+      xml:lang="en" 
+      xmlns:svg="http://www.w3.org/2000/svg" 
+      xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <head>
         <!--Meta Data-->
         <title>Naamio</title>
+        <meta name="description" content="Create secure and scalable progressive web applications quickly with Naamio." />
+        <meta charset="UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1" />
+        <meta name="application-name" content="Naamio" />
+        <meta property="og:title" content="Naamio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://samplescoffee.com/" />
+        <meta property="og:image" content="{% asset "/images/rasters/social-image/samples-coffee-home.png" %}" />
+        <meta property="og:description" content="Create secure and scalable progressive web applications quickly with Naamio." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Naamio" />
+        <meta name="twitter:description" content="Create secure and scalable progressive web applications quickly with Naamio." />
+        <meta name="twitter:image" content="{% asset "/images/rasters/social-image/samples-coffee-home.png" %}" />
+        <meta name="keywords" content="Naamio, web application, web platform, progressive web app, web app, publishing, blogging" />
+        <!--App Icons-->
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="{% asset "/images/rasters/icons/mstile-144x144.png" %}" />
+        <meta name="msapplication-square70x70logo" content="{% asset "/images/rasters/icons/mstile-70x70.png" %}" />
+        <meta name="msapplication-square150x150logo" content="{% asset "/images/rasters/icons/mstile-150x150.png" %}" />
+        <meta name="msapplication-wide310x150logo" content="{% asset "/images/rasters/icons/mstile-310x150.png" %}" />
+        <meta name="msapplication-square310x310logo" content="{% asset "/images/rasters/icons/mstile-310x310.png" %}" />
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% asset "/images/rasters/app-icons/apple-touch-icon-57x57.png" %}" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% asset "/images/rasters/app-icons/apple-touch-icon-114x114.png" %}" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% asset "/images/rasters/app-icons/apple-touch-icon-72x72.png" %}" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% asset "/images/rasters/app-icons/apple-touch-icon-144x144.png" %}" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{% asset "/images/rasters/app-icons/apple-touch-icon-60x60.png" %}" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% asset "/images/rasters/app-icons/apple-touch-icon-120x120.png" %}" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{% asset "/images/rasters/app-icons/apple-touch-icon-76x76.png" %}" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{% asset "/images/rasters/app-icons/apple-touch-icon-152x152.png" %}" />
+        <link rel="icon" type="image/png" href="{% asset "/images/rasters/app-icons/favicon-196x196.png" %}" sizes="196x196" />
+        <link rel="icon" type="image/png" href="{% asset "/images/rasters/app-icons/favicon-96x96.png" %}" sizes="96x96" />
+        <link rel="icon" type="image/png" href="{% asset "/images/rasters/app-icons/favicon-32x32.png" %}" sizes="32x32" />
+        <!--Canonical-->
+        <link rel="canonical" href="https://naamio.cloud" />
         <!--Stylesheets-->
         <link rel="stylesheet" href="{% asset "/styles/css/handheld.css" %}" media="screen" type="text/css" />
         <link rel="stylesheet" href="{% asset "/styles/css/screen.css" %}" media="screen and (min-width: 667px)" type="text/css" />
+        <!--Scripts-->
     </head>
     <body>
         {% if partials.header %}
             {% block header %}
                 {% include "partials/header.html" %}
-            {% end block %}
+            {% endblock %}
         {% endif %}
-        {% block content %}
-        {% end block %}
+        {% block content %}{% endblock %}
         {% if partials.footer %}
             {% block footer %}
                 {% include "partials/footer.html" %}
-            {% end block %}
+            {% endblock %}
         {% endif %}
     </body>
 </html>

@@ -4,6 +4,13 @@
  * Naamio
  */
 
-@media (min-width: 670px) {
-    
+@media (min-width: 667px) {
+    footer > * {
+        width: unset;
+    }
+
+    footer > ul.social-box {
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+    }
 }
