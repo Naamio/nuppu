@@ -3,3 +3,75 @@
  * Project: Nuppu
  * Naamio
  */
+
+header {
+    background-image: var(--brand-gradient);
+    min-height: 100vh;
+}
+
+header nav {
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 0 auto;
+    height: 4em;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    z-index: 2;
+}
+
+div#dropdown-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 0 auto;
+}
+
+div#dropdown-wrapper button {
+    height: 100%;
+    z-index: 3;
+}
+
+.dropdown-button,
+.dropdown-button:hover,
+.dropdown-button:active {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--light-neutral-color);
+}
+
+.dropdown-button:hover + nav#dropdown-navlist,
+.dropdown-button:active + nav#dropdown-navlist,
+nav#dropdown-navlist:hover {
+    top: 0;
+    transform: scaleY(1);
+    transition: top 1s, tranform 1s;
+}
+
+nav#dropdown-navlist {
+    background-color: var(--dark-neutral-color);
+    min-height: 100vh;
+    padding-top: 4em;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: -100vh;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: top 1s, transform 1s;
+    z-index: 2;
+}
+
+nav#dropdown-navlist ul {
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+    width: 100%;
+}
+
+nav#dropdown-navlist h3 {
+    color: var(--primary-action-color);
+}
+
+nav#dropdown-navlist p {
+    color: var(--light-neutral-color);
+    opacity: 0.8;
+}

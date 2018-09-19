@@ -3,3 +3,16 @@
  * Project: Nuppu
  * Naamio
  */
+
+main > section {
+    background-color: var(--light-neutral-color);
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+main > section.text-left > div {
+    width: 50%;
+}
+
