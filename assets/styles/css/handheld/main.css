@@ -104,3 +104,8 @@ blockquote::after {
 section.features.small {
     flex-direction: column;
 }
+
+#naamio-flow {
+    margin-top: -21.42vw;
+    width: 200%;
+}

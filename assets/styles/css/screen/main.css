@@ -9,3 +9,11 @@
         width: unset;
     }
 }
+
+@media (min-width: 960px) {
+    #naamio-flow {
+        margin-top: -10.71vw;
+        width: 100%;
+    }
+}
+
