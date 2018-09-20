@@ -80,7 +80,7 @@ build-container: clean-container build
 
 run-container: build-container
 
-	docker run -d --name $(CONTAINER_NAME) -p 8090:8090 -it $(CONTAINER_URL) -v  $$(pwd)/$(BUILD_DIR):/usr/share/naamio/copan
+	docker run -d --name $(CONTAINER_NAME) -p 8090:8090 -it $(CONTAINER_URL) -v  $$(pwd)/$(BUILD_DIR):/usr/share/naamio/nuppu
 
 all: test build
 
