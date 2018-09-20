@@ -13,4 +13,8 @@
         align-items: flex-start;
         -webkit-align-items: flex-start;
     }
+
+    footer > .badge-box svg {
+        align-self: flex-end;
+    }
 }

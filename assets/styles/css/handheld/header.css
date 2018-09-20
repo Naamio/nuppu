@@ -24,17 +24,20 @@ header nav {
 }
 
 a#home {
-    display: block;
+    display: none;
     margin: auto 2em auto 2em;
 }
 
 div#dropdown-wrapper {
     display: flex;
     display: -webkit-flex;
-    flex: 0 0 auto;
+    flex: 2 0 auto;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
 }
 
-div#dropdown-wrapper button {
+div#dropdown-wrapper button,
+div#dropdown-wrapper .button {
     height: 100%;
     z-index: 3;
 }
@@ -67,8 +70,8 @@ nav#dropdown-navlist:hover {
 
 nav#dropdown-navlist {
     background-color: var(--dark-neutral-color);
-    margin-top: 4em;
-    min-height: calc(100vh - 4em);
+    margin-top: 0;
+    min-height: 100vh;
     overflow-y: scroll;
     position: absolute;
     right: 0;
@@ -82,7 +85,10 @@ nav#dropdown-navlist {
 
 nav#dropdown-navlist ul {
     list-style: none;
-    margin: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4em;
     padding: 2em;
     width: 100%;
 }
@@ -94,6 +100,7 @@ nav#dropdown-navlist ul {
 nav#dropdown-navlist h3 {
     color: var(--primary-action-color);
     margin-bottom: 0;
+    transition: var(--default-transition-style);
 }
 
 nav#dropdown-navlist p {
@@ -108,9 +115,23 @@ header > section {
     display: flex;
     display: -webkit-flex;
     height: 100%;
+    flex-direction: column;
     flex-grow: 1;
     justify-content: center;
     -webkit-justify-content: center;
-    position: fixed;
+    position: absolute;
+    top: 0;
     width: 100%;
+}
+
+#dropdown-navlist a:hover h3 {
+    color: var(--primary-complementary-color);
+    transform: translateX(-1em);
+    transition: var(--default-transition-style);
+}
+
+@media (min-width: 480px) {
+    a#home {
+        display: block;
+    }
 }

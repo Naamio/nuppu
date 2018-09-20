@@ -73,9 +73,32 @@ section#breadcrumbs {
     background-color: var(--light-neutral-color);
     color: var(--dark-neutral-color);
     height: 4em;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
     min-height: unset;
     padding: 0;
     width: 100%;
+}
+
+section#breadcrumbs > * {
+    padding: 1em;
+}
+
+section#breadcrumbs #breadcrumbs-home {
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+}
+
+#breadcrumbs-home svg {
+    margin-right: 1rem;
+}
+
+section#breadcrumbs h4 {
+    color: var(--dark-neutral-color);
+    font-size: 0.8em;
+    margin: 0;
 }
 
 .full-width-feature div {
