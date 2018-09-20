@@ -17,15 +17,15 @@ button,
     border-width: var(--border-width);
     color: var(--primary-complementary-color);
     cursor: pointer;
-    height: 4em;
+    height: 4rem;
     font-family: var(--title-font);
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     line-height: 1;
     min-width: 10em;
     outline: 0;
-    padding: 0.6em 1em 0.6em 1rem;
+    padding: 1.4rem 1rem 1.5rem 1rem;
     text-align: center;
     text-transform: uppercase;
     transition: var(--default-transition-style);
