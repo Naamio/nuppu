@@ -23,6 +23,7 @@ main > section {
 }
 
 main > section.full-width-feature {
+    min-height: 80vh;
     padding: 0;
 }
 
@@ -30,6 +31,10 @@ main > section.features > div {
     max-width: 56ch;
     min-width: 16em;
     width: 50%;
+}
+
+main > section.features h3 {
+    color: var(--primary-complementary-color);
 }
 
 section.features div > svg {
@@ -67,6 +72,10 @@ section.questions-contact > div {
 
 div.button-container {
     flex-grow: 1;
+}
+
+.features.small div {
+    margin-bottom: 4em;
 }
 
 section#breadcrumbs {

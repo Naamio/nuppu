@@ -13,6 +13,11 @@ header {
     min-height: 100vh;
 }
 
+header h2 {
+    color: var(--light-neutral-color);
+    filter: drop-shadow(1px 1px 0.5px var(--primary-complementary-color));
+}
+
 header nav {
     display: flex;
     display: -webkit-flex;

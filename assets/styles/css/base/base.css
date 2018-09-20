@@ -57,12 +57,13 @@ h1 {
     text-transform: uppercase;
 }
 
-h2, h3 {
+h2 {
     color: var(--mid-dark-neutral-color);
+    font-weight: 300;
 }
 
-h2 {
-    font-weight: 300;
+h3 {
+    color: var(--dark-neutral-color);
 }
 
 h3, h4 {
