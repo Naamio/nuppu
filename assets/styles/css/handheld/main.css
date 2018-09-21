@@ -28,7 +28,7 @@ main > section[class~="features"] > div {
 main > section.features > div:nth-of-type(2) {
     display: flex;
     display: -webkit-flex;
-    flex: 1 0 44%;
+    flex: 0 0 44%;
     width: 44%;
 }
 
@@ -37,11 +37,14 @@ main > section.full-width-feature {
     padding: 0;
 }
 
-main > section[class~="features"] h3 {
+main > section.features-small h3 {
     color: var(--primary-complementary-color);
 }
 
 section[class~="features"] div > svg {
+    height: 100%;
+    flex: 1 1 100%;
+    margin: auto;
     max-width: 30em;
     padding: 10%;
 }
@@ -117,6 +120,10 @@ section#breadcrumbs h4 {
 
 .full-width-feature div {
     min-height: 50vh;
+}
+
+.full-width-feature img {
+    width: 100%;
 }
 
 blockquote::before,

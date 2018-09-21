@@ -25,7 +25,9 @@ footer > * {
     display: flex;
     display: -webkit-flex;
     flex: 0 0 auto;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
     margin: 2em;
     width: 100%;
 }

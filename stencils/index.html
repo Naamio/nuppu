@@ -1,526 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" 
-      xml:lang="en" 
-      xmlns:svg="http://www.w3.org/2000/svg" 
-      xmlns:xlink="http://www.w3.org/1999/xlink">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <head>
-        <!--Meta Data-->
-        <title>Naamio Cloud</title>
-        <meta name="description" content="Modern & decentralized cloud platform for private and public web applications. Own your identity, own your style, own your data. With open standards and open source." />
-        <meta charset="UTF-8" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1" />
-        <meta name="application-name" content="Naamio Cloud" />
-        <meta property="og:title" content="Naamio Cloud" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://naamio.cloud/" />
-        <meta property="og:image" content="{% asset "/images/rasters/social-image/naamio-home.png" %}" />
-        <meta property="og:description" content="Modern & decentralized cloud platform for private and public web applications. Own your identity, own your style, own your data. With open standards and open source." />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Naamio Cloud" />
-        <meta name="twitter:description" content="Modern & decentralized cloud platform for private and public web applications. Own your identity, own your style, own your data. With open standards and open source." />
-        <meta name="twitter:image" content="{% asset "/images/rasters/social-image/naamio-home.png" %}" />
-        <meta name="keywords" content="Naamio, web application, web platform, progressive web app, web app, publishing, blogging" />
-        <!--App Icons-->
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="msapplication-TileImage" content="{% asset "/images/rasters/icons/mstile-144x144.png" %}" />
-        <meta name="msapplication-square70x70logo" content="{% asset "/images/rasters/icons/mstile-70x70.png" %}" />
-        <meta name="msapplication-square150x150logo" content="{% asset "/images/rasters/icons/mstile-150x150.png" %}" />
-        <meta name="msapplication-wide310x150logo" content="{% asset "/images/rasters/icons/mstile-310x150.png" %}" />
-        <meta name="msapplication-square310x310logo" content="{% asset "/images/rasters/icons/mstile-310x310.png" %}" />
-        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% asset "/images/rasters/app-icons/apple-touch-icon-57x57.png" %}" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% asset "/images/rasters/app-icons/apple-touch-icon-114x114.png" %}" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% asset "/images/rasters/app-icons/apple-touch-icon-72x72.png" %}" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% asset "/images/rasters/app-icons/apple-touch-icon-144x144.png" %}" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{% asset "/images/rasters/app-icons/apple-touch-icon-60x60.png" %}" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% asset "/images/rasters/app-icons/apple-touch-icon-120x120.png" %}" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{% asset "/images/rasters/app-icons/apple-touch-icon-76x76.png" %}" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{% asset "/images/rasters/app-icons/apple-touch-icon-152x152.png" %}" />
-        <link rel="icon" type="image/png" href="{% asset "/images/rasters/app-icons/favicon-196x196.png" %}" sizes="196x196" />
-        <link rel="icon" type="image/png" href="{% asset "/images/rasters/app-icons/favicon-96x96.png" %}" sizes="96x96" />
-        <link rel="icon" type="image/png" href="{% asset "/images/rasters/app-icons/favicon-32x32.png" %}" sizes="32x32" />
-        <!--Canonical-->
-        <link rel="canonical" href="https://naamio.cloud" />
-        <!--Stylesheets-->
-        <link rel="stylesheet" href="/assets/styles/css/handheld.css" media="screen" type="text/css" />
-        <link rel="stylesheet" href="/assets/styles/css/screen.css" media="screen and (min-width: 667px)" type="text/css" />
-        <!--Scripts-->
-    </head>
-    <body>
-        <header id="top">
-                <nav>
-                    <a href="/" id="home">
-                        <svg id="naamio-mask-logo" width="4em" height="auto" viewBox="0 0 58 32" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="/assets/images/vectors/symbol-defs.svg#naamio-mask-logo" href="/assets/images/vectors/symbol-defs.svg#naamio-mask-logo" />
-                        </svg>
-                    </a>
-                    <div id="dropdown-wrapper">
-                        <button class="dropdown-button">
-                            Projects
-                        </button>
-                        <nav id="dropdown-navlist">
-                            <ul>
-                                <li>
-                                    <a href="/projects/naamio">
-                                        <h3>
-                                            Naamio
-                                        </h3>
-                                        <p>
-                                            The lightweight web application platform
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/projects/kauppa">
-                                        <h3>
-                                            Kauppa
-                                        </h3>
-                                        <p>
-                                            The modular ecommerce platform
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/projects/pomo">
-                                        <h3>
-                                            Pomo
-                                        </h3>
-                                        <p>
-                                            The social dashboard app
-                                        </p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="button" href="/sign-up">
-                            Sign up
-                        </div>
-                    </div>
-                </nav>
-                <section>
-                    <h1>Naamio</h1>
-    
-                </section>
+<head>
+    <!--Meta Data-->
+    <title>Naamio Cloud</title>
+    <meta name="description" content="Modern & decentralized cloud platform for private and public web applications. Own your identity, own your style, own your data. With open standards and open source."
+    />
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1" />
+    <meta name="application-name" content="Naamio Cloud" />
+    <meta property="og:title" content="Naamio Cloud" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://naamio.cloud/" />
+    <meta property="og:image" content="{% asset " /images/rasters/social-image/naamio-home.png " %}" />
+    <meta property="og:description" content="Modern & decentralized cloud platform for private and public web applications. Own your identity, own your style, own your data. With open standards and open source."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Naamio Cloud" />
+    <meta name="twitter:description" content="Modern & decentralized cloud platform for private and public web applications. Own your identity, own your style, own your data. With open standards and open source."
+    />
+    <meta name="twitter:image" content="{% asset " /images/rasters/social-image/naamio-home.png " %}" />
+    <meta name="keywords" content="Naamio, web application, web platform, progressive web app, web app, publishing, blogging"
+    />
+    <!--App Icons-->
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="{% asset " /images/rasters/icons/mstile-144x144.png " %}" />
+    <meta name="msapplication-square70x70logo" content="{% asset " /images/rasters/icons/mstile-70x70.png " %}" />
+    <meta name="msapplication-square150x150logo" content="{% asset " /images/rasters/icons/mstile-150x150.png " %}" />
+    <meta name="msapplication-wide310x150logo" content="{% asset " /images/rasters/icons/mstile-310x150.png " %}" />
+    <meta name="msapplication-square310x310logo" content="{% asset " /images/rasters/icons/mstile-310x310.png " %}" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% asset " /images/rasters/app-icons/apple-touch-icon-57x57.png
+        " %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% asset " /images/rasters/app-icons/apple-touch-icon-114x114.png
+        " %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% asset " /images/rasters/app-icons/apple-touch-icon-72x72.png
+        " %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% asset " /images/rasters/app-icons/apple-touch-icon-144x144.png
+        " %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{% asset " /images/rasters/app-icons/apple-touch-icon-60x60.png
+        " %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% asset " /images/rasters/app-icons/apple-touch-icon-120x120.png
+        " %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{% asset " /images/rasters/app-icons/apple-touch-icon-76x76.png
+        " %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{% asset " /images/rasters/app-icons/apple-touch-icon-152x152.png
+        " %}" />
+    <link rel="icon" type="image/png" href="{% asset " /images/rasters/app-icons/favicon-196x196.png " %}" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{% asset " /images/rasters/app-icons/favicon-96x96.png " %}" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{% asset " /images/rasters/app-icons/favicon-32x32.png " %}" sizes="32x32" />
+    <!--Canonical-->
+    <link rel="canonical" href="https://naamio.cloud" />
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="/assets/styles/css/handheld.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="/assets/styles/css/screen.css" media="screen and (min-width: 667px)" type="text/css" />
+    <!--Scripts-->
+</head>
 
-            </header>
-            <svg id="naamio-flow" width="100%" height="100%" viewBox="0 0 1400 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-                <rect id="naamio-flow-rect" x="0" y="0" width="1400" height="300" style="fill:none;"/>
-                <clipPath >
-                    <rect x="0" y="0" width="1400" height="300"/>
-                </clipPath>
-                <g>
-                    <g>
-                        <path d="M718.224,71.558C753.174,46.987 790.179,26.247 826.77,26.247C883.017,26.247 955.942,76.113 1020.11,112.751C1036.26,115.493 1050.67,124.829 1064.59,136.038C1069.9,138.454 1075.08,140.636 1080.13,142.536C1087.98,137.948 1095.6,134.269 1102.92,132.057C1117.38,121.149 1132.55,112.857 1149.81,112.271C1159.79,111.931 1171,113.72 1182.89,116.903C1210.92,92.292 1237.04,63.279 1263.77,63.247C1294.62,63.21 1316.02,97.376 1344.02,122.97C1367.29,125.862 1399.49,148.789 1401.19,150C1399.49,151.216 1367.02,174.563 1343.73,177.298C1315.87,202.861 1294.52,236.79 1263.77,236.753C1237.11,236.721 1211.05,207.848 1183.09,183.275C1171.12,186.492 1159.85,188.303 1149.81,187.962C1132.55,187.376 1117.38,179.084 1102.92,168.176C1095.53,165.941 1087.82,162.209 1079.89,157.555C1075.13,159.354 1070.24,161.404 1065.25,163.663C1050.96,175.24 1036.18,184.919 1019.53,187.576C955.508,224.183 882.85,273.753 826.77,273.753C790.297,273.753 753.412,253.146 718.562,228.68C682.795,228.233 651.416,204.102 624.743,170.291C622.312,167.209 619.729,164.016 617.007,160.748C605.02,166.749 593.321,172.42 582.029,177.039C550.302,207.245 511.762,233.557 476.743,231.582C452.612,230.221 426.059,208.475 399.259,183.764C399.108,183.775 398.956,183.784 398.804,183.793C380,184.924 360.307,178.292 340.012,169.315C327.883,178.427 316.052,185.362 304.743,188.343C296.369,190.551 288.004,191.181 279.638,190.673C266.509,196.633 254.155,200.112 243.53,197.902C231.022,195.301 220.174,184.495 210.182,171.045C201.734,170.997 192.575,170.706 182.964,170.226C174.071,183.324 165.257,193.822 155.77,196.51C134.509,202.534 113.204,178.35 92.861,162.451C44.251,157.006 -1.3,150 -1.3,150C-1.3,150 -1.735,150.001 -1.743,150L0.402,149.753C8.732,148.518 47.388,142.882 92.513,137.821C112.961,121.927 134.388,97.431 155.77,103.49C165.311,106.193 174.172,116.797 183.117,129.999C192.606,129.527 201.654,129.239 210.009,129.188C220.049,115.63 230.95,104.714 243.53,102.098C254.277,99.863 266.792,103.448 280.091,109.533C288.306,109.075 296.52,109.722 304.743,111.889C316.052,114.871 327.883,121.806 340.012,130.918C360.307,121.94 380,115.309 398.804,116.439C398.956,116.448 399.108,116.458 399.259,116.469C426.059,91.757 452.612,70.012 476.743,68.651C511.762,66.675 550.302,92.988 582.029,123.194C593.321,127.812 605.02,133.484 617.007,139.485C619.729,136.216 622.312,133.024 624.743,129.942C651.332,96.238 682.597,72.152 718.224,71.558Z" style="fill:url(#_naamio-flow-Linear2);"/>
-                        <g>
-                            <g>
-                                <g opacity="0.5">
-                                    <path d="M-1.743,150C-1.743,150 48.69,143.592 72.39,150.59C98.642,158.342 127.246,204.592 155.77,196.51C184.293,188.428 206.729,109.751 243.53,102.098C280.331,94.445 337.867,155.034 376.574,150.59C415.281,146.146 439.737,75.436 475.77,75.436C511.802,75.436 546.865,157.023 592.77,150.59C651.27,142.392 740.18,26.247 826.77,26.247C913.359,26.247 1039.47,144.423 1112.31,150.59C1170.38,155.507 1215.78,63.345 1263.77,63.247C1311.76,63.149 1338.53,144.496 1400.26,150" style="fill:rgb(22,240,175);"/>
-                                    <path d="M-1.743,150C-1.743,150 48.69,156.408 72.39,149.41C98.642,141.658 127.246,95.408 155.77,103.49C184.293,111.572 206.729,190.249 243.53,197.902C280.331,205.555 337.867,144.966 376.574,149.41C415.281,153.854 439.737,224.564 475.77,224.564C511.802,224.564 546.865,142.977 592.77,149.41C651.27,157.608 740.18,273.753 826.77,273.753C913.359,273.753 1039.47,155.577 1112.31,149.41C1170.38,144.493 1215.78,236.655 1263.77,236.753C1311.76,236.851 1338.53,155.504 1400.26,150" style="fill:rgb(22,240,175);"/>
-                                </g>
-                            </g>
-                            <g>
-                                <g opacity="0.5">
-                                    <path d="M1401.26,149.953C1401.26,149.953 1358.87,119.41 1335.41,122.956C1293.5,129.29 1203.87,189.798 1149.81,187.962C1097.1,186.171 1063.79,112.478 1011.06,111.936C943.383,111.242 823.005,183.793 743.743,183.793C670.31,183.793 592.981,111.936 535.491,111.936C484.016,111.936 448.854,180.785 398.804,183.793C348.754,186.802 292.4,134.821 235.193,129.989C168.516,124.357 -1.257,150 -1.257,150" style="fill:rgb(98,0,234);"/>
-                                    <path d="M1401.26,150C1401.26,150 1358.9,180.802 1335.41,177.277C1293.5,170.989 1203.87,110.434 1149.81,112.271C1097.1,114.061 1063.79,187.755 1011.06,188.296C943.383,188.991 823.005,116.439 743.743,116.439C670.31,116.439 592.981,188.296 535.491,188.296C484.016,188.296 448.854,119.448 398.804,116.439C348.754,113.431 292.402,165.445 235.193,170.244C168.516,175.837 -1.257,150 -1.257,150" style="fill:rgb(98,0,234);"/>
-                                </g>
-                            </g>
-                            <g>
-                                <g opacity="0.5">
-                                    <path d="M-1.257,149.953C-1.257,149.953 134.743,149.566 155.743,146.953C206.377,140.655 255.406,98.882 304.743,111.889C358.243,125.994 423.41,228.573 476.743,231.582C530.077,234.591 591.578,171.983 624.743,129.942C670.455,71.998 729.988,42.482 801.743,111.889C866.326,174.358 902.821,206.945 954.743,209.953C1006.67,212.962 1067.51,134.31 1113.28,129.942C1155.74,125.89 1186.84,180.454 1229.37,183.747C1272.44,187.082 1343.01,155.586 1371.74,149.953C1381.56,148.03 1401.74,149.953 1401.74,149.953" style="fill:rgb(22,84,240);"/>
-                                    <path d="M-1.257,150C-1.257,150 134.743,150.667 155.743,153.279C206.377,159.578 255.406,201.351 304.743,188.343C358.243,174.238 423.41,71.66 476.743,68.651C530.077,65.642 591.578,128.25 624.743,170.291C670.455,228.235 729.988,257.751 801.743,188.343C866.326,125.874 902.821,93.288 954.743,90.279C1006.67,87.27 1067.51,165.923 1113.28,170.291C1155.74,174.342 1186.84,119.778 1229.37,116.486C1272.44,113.151 1343.01,144.694 1371.74,150.279C1381.56,152.188 1401.74,150 1401.74,150" style="fill:rgb(22,84,240);"/>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-                <defs>
-                    <linearGradient id="_naamio-flow-Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1403.49,0,0,247.506,-1.74349,150)"><stop offset="0" style="stop-color:rgb(22,240,175);stop-opacity:1"/><stop offset="0.5" style="stop-color:rgb(22,84,240);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(98,0,234);stop-opacity:1"/></linearGradient>
-                </defs>
-            </svg>
-
-        <main role="main">
-            <section class="features">
-                <div>
-                    <h2>Make it <strong>serverless.</strong></h2>
-                    <p>
-                        Naamio was built to support Functions-as-a-Service. 
-                        This allows you to deploy a brand new, fully functional, 
-                        custom web application with just a few lines of code, in 
-                        any language you choose: Go, JavaScript, Python, Ruby, 
-                        Rust, and Swift are all supported.
-                    </p>
-                </div>
-                <div>
-                    <svg id="serverless" width="100%" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="/assets/images/vectors/symbol-defs.svg#serverless" href="/assets/images/vectors/symbol-defs.svg#serverless" />
-                    </svg>
-                </div>
-            </section>
-            <section class="features">
-                <div>
-                    <h2>Make it <strong>intelligent.</strong></h2>
-                    <p>
-                        Our infrastructure is managed with custom deep 
-                        learning modules. Operators powered by neural networks 
-                        enable predictive artificial intelligence-inspired 
-                        management of networks, storage, compilation, and security
-                            to keep performance, scalability, and stability optimum.
-                    </p>
-                </div>
-                <div>
-                    <svg id="intelligent" width="100%" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="/assets/images/vectors/symbol-defs.svg#intelligent" href="/assets/images/vectors/symbol-defs.svg#intelligent" />
-                    </svg>
-                </div>
-            </section>
-            <section class="features">
-                <div>
-                    <h2>Make it <strong>isomorphic.</strong></h2>
-                    <p>
-                        Although we fully endorse the use of standard visual 
-                        libraries, such as React and Vue, our platform is designed 
-                        with isomorphic best practices in-mind. Our templating 
-                        engine supports both server- and browser-based rendering 
-                        so you can focus on what you want to build without sacrificing 
-                        performance.
-                    </p>
-                </div>
-                <div>
-                    <svg id="isomorphic" width="100%" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="/assets/images/vectors/symbol-defs.svg#isomorphic" href="/assets/images/vectors/symbol-defs.svg#isomorphic" />
-                    </svg>
-                </div>
-            </section>
-            <section class="full-width-feature">
-                <svg width="100%" height="auto" viewBox="0 0 1400 732" version="1.1" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
-                    <rect id="naamio-feature-image" x="0" y="0" width="1400" height="732" style="fill:none;"/>
-                    <clipPath id="_clip1">
-                        <rect x="0" y="0" width="1400" height="732"/>
-                    </clipPath>
-                    <g clip-path="url(#_clip1)">
-                        <g>
-                            <g>
-                                <g>
-                                    <g opacity="0.5">
-                                        <path d="M0,390.432c0,0 85.157,-10.82 125.175,0.997c44.327,13.089 92.625,91.183 140.787,77.537c48.162,-13.647 86.046,-146.494 148.184,-159.416c62.139,-12.923 159.289,89.382 224.646,81.879c65.356,-7.503 106.651,-126.898 167.492,-126.898c60.841,0 120.046,137.76 197.555,126.898c98.778,-13.843 248.904,-209.954 395.111,-209.954c146.207,0 359.15,199.541 482.13,209.954c98.057,8.302 174.713,-147.314 255.747,-147.48c81.035,-0.166 126.227,137.19 230.46,146.483" style="fill:rgb(22,240,175);"/>
-                                        <path d="M0,390.432c0,0 85.157,10.821 125.175,-0.996c44.327,-13.089 92.625,-91.183 140.787,-77.537c48.162,13.647 86.046,146.493 148.184,159.416c62.139,12.923 159.289,-89.382 224.646,-81.879c65.356,7.503 106.651,126.898 167.492,126.898c60.841,0 120.046,-137.76 197.555,-126.898c98.778,13.843 248.904,209.954 395.111,209.954c146.207,0 359.15,-199.541 482.13,-209.954c98.057,-8.302 174.713,147.313 255.747,147.479c81.035,0.166 126.227,-137.189 230.46,-146.483" style="fill:rgb(22,240,175);"/>
-                                    </g>
-                                </g>
-                                <g>
-                                    <g opacity="0.5">
-                                        <path d="M2368.97,390.354c0,0 -71.578,-51.573 -111.183,-45.586c-70.763,10.696 -222.114,112.864 -313.392,109.763c-88.995,-3.023 -145.233,-127.455 -234.275,-128.369c-114.273,-1.173 -317.532,121.331 -451.365,121.331c-123.993,0 -254.563,-121.331 -351.636,-121.331c-86.915,0 -146.287,116.251 -230.797,121.331c-84.509,5.08 -179.664,-82.691 -276.258,-90.85c-112.584,-9.51 -399.247,33.79 -399.247,33.79" style="fill:rgb(98,0,234);"/>
-                                        <path d="M2368.97,390.432c0,0 -71.512,52.01 -111.183,46.058c-70.763,-10.618 -222.114,-112.865 -313.392,-109.764c-88.995,3.024 -145.233,127.456 -234.275,128.37c-114.273,1.173 -317.532,-121.331 -451.365,-121.331c-123.993,0 -254.563,121.331 -351.636,121.331c-86.915,0 -146.287,-116.251 -230.797,-121.331c-84.509,-5.08 -179.66,82.746 -276.258,90.85c-112.584,9.444 -399.247,-34.183 -399.247,-34.183" style="fill:rgb(98,0,234);"/>
-                                    </g>
-                                </g>
-                                <g>
-                                    <g opacity="0.5">
-                                        <path d="M0.822,390.354c0,0 229.637,-0.655 265.096,-5.066c85.494,-10.635 168.281,-81.168 251.587,-59.205c90.335,23.815 200.37,197.021 290.424,202.101c90.053,5.08 193.899,-100.634 249.899,-171.62c77.183,-97.839 177.705,-147.677 298.865,-30.481c109.048,105.479 170.67,160.501 258.342,165.581c87.672,5.08 190.406,-127.725 267.689,-135.1c71.689,-6.841 124.213,85.291 196.012,90.85c72.737,5.631 191.896,-47.55 240.406,-57.06c16.57,-3.248 50.655,0 50.655,0" style="fill:rgb(22,84,240);"/>
-                                        <path d="M0.822,390.432c0,0 229.637,1.126 265.096,5.537c85.494,10.635 168.281,81.169 251.587,59.206c90.335,-23.816 200.37,-197.021 290.424,-202.101c90.053,-5.081 193.899,100.633 249.899,171.62c77.183,97.839 177.705,147.677 298.865,30.481c109.048,-105.479 170.67,-160.501 258.342,-165.582c87.672,-5.08 190.406,127.726 267.689,135.101c71.689,6.841 124.213,-85.291 196.012,-90.85c72.737,-5.632 191.896,47.628 240.406,57.06c16.576,3.222 50.655,-0.472 50.655,-0.472" style="fill:rgb(22,84,240);"/>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                        <g>
-                            <g>
-                                <path d="M401.729,150.2c-84.232,60.141 -189.707,-5.144 -252.717,83.185c-54.528,76.44 -43.22,168.427 21.093,213.851c74.667,52.736 166.96,20.316 183.3,71.219c37.613,117.172 209.513,134.428 315.347,14.585c105.834,-119.842 90.955,-289.946 36.552,-416.301c-58.336,-135.492 -233.532,-16.549 -303.575,33.461Z" style="fill:rgb(22,84,240);fill-opacity:0.2;"/>
-                                <path d="M387.957,105.991c-69.142,49.367 -155.721,-4.223 -207.442,68.282c-44.76,62.746 -35.478,138.253 17.314,175.539c61.29,43.289 137.048,16.677 150.461,58.461c30.875,96.18 171.978,110.345 258.852,11.972c86.874,-98.373 74.661,-238.002 30.004,-341.72c-47.885,-111.218 -191.695,-13.585 -249.189,27.466Z" style="fill:rgb(22,84,240);fill-opacity:0.4;"/>
-                                <path d="M556.587,161.974c-34.859,24.889 -78.51,-2.129 -104.587,34.426c-22.566,31.634 -17.886,69.703 8.73,88.501c30.9,21.825 69.096,8.409 75.858,29.475c15.566,48.491 86.706,55.632 130.506,6.036c43.799,-49.597 37.641,-119.994 15.127,-172.286c-24.143,-56.073 -96.647,-6.849 -125.634,13.848Z" style="fill:rgb(22,84,240);"/>
-                            </g>
-                            <g>
-                                <g>
-                                    <path d="M1187.11,156.74c-18.681,-10.316 -42.223,-3.525 -52.539,15.155l-87.159,157.828c-10.317,18.681 -3.526,42.223 15.155,52.539l67.693,37.383c18.681,10.316 42.223,3.526 52.539,-15.155l87.159,-157.828c10.317,-18.681 3.526,-42.222 -15.155,-52.539l-67.693,-37.383Z" style="fill:url(#_Radial2);"/>
-                                    <clipPath id="_clip3">
-                                        <path d="M1163.68,245.708l32.566,15.105c2.289,1.062 2.966,1.665 3.516,2.464c0.55,0.799 0.787,1.707 0.698,2.682c-0.088,0.976 -0.381,1.849 -1.846,3.95l-49.756,71.368c-1.465,2.102 -2.234,2.753 -3.217,3.314c-0.983,0.561 -2.06,0.859 -3.183,0.882c-1.123,0.022 -2.106,-0.144 -4.394,-1.205l-32.567,-15.105c-2.288,-1.062 -2.965,-1.665 -3.516,-2.464c-0.55,-0.799 -0.786,-1.707 -0.698,-2.682c0.088,-0.976 0.381,-1.849 1.846,-3.95l49.756,-71.369c1.465,-2.101 2.235,-2.752 3.218,-3.313c0.983,-0.561 2.06,-0.859 3.183,-0.882c1.123,-0.023 2.105,0.144 4.394,1.205Z"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip3)">
-                                        <path d="M1203.61,263.65l-46.68,-21.652l-58.791,84.328l46.68,21.651l58.791,-84.327Z" style="fill:rgb(48,48,48);"/>
-                                    </g>
-                                    <clipPath id="_clip4">
-                                        <path d="M1174.76,254.773l4.374,2.029c0.236,0.11 0.305,0.374 0.153,0.591c-0.151,0.217 -0.465,0.304 -0.701,0.195l-4.373,-2.029c-0.237,-0.109 -0.306,-0.374 -0.154,-0.591c0.151,-0.217 0.465,-0.304 0.701,-0.195Z"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip4)">
-                                        <path d="M1179.56,257l-5.229,-2.425l-0.535,0.768l5.229,2.426l0.535,-0.769Z"/>
-                                    </g>
-                                    <clipPath id="_clip5">
-                                        <path d="M1180.63,258.536c0.315,0.146 0.734,0.03 0.935,-0.26c0.202,-0.289 0.11,-0.642 -0.205,-0.788c-0.315,-0.146 -0.734,-0.03 -0.935,0.259c-0.202,0.29 -0.11,0.643 0.205,0.789Z"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip5)">
-                                        <path d="M1181.93,257.753l-1.141,-0.529l-0.731,1.047l1.141,0.529l0.731,-1.047Z"/>
-                                    </g>
-                                    <g>
-                                        <g>
-                                            <path d="M1162.43,248.93c2.151,0.997 4.301,1.995 6.452,2.992c1.103,0.512 -0.479,2.782 1.552,3.724l11.577,5.369c1.896,0.88 3.479,-1.39 4.69,-0.828c2.261,1.049 4.523,2.098 6.785,3.147c2.31,1.071 2.984,3.66 1.505,5.781l-48.068,68.948c-1.194,1.712 -1.821,2.243 -2.622,2.699c-0.801,0.457 -1.678,0.7 -2.593,0.719c-0.915,0.019 -1.716,-0.117 -3.58,-0.982l-28.697,-13.31c-1.865,-0.865 -2.416,-1.357 -2.865,-2.008c-0.448,-0.651 -0.641,-1.39 -0.569,-2.185c0.072,-0.795 0.311,-1.506 1.504,-3.218l48.068,-68.948c1.479,-2.121 4.551,-2.972 6.861,-1.9Z" style="fill-rule:nonzero;"/>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path d="M566.729,343.842c26.049,16.98 27.7,40.658 3.685,52.842l-87.024,44.151c-24.014,12.184 -64.66,8.289 -90.709,-8.691l-183.797,-119.814c-26.049,-16.98 -27.7,-40.658 -3.685,-52.842l87.023,-44.151c24.015,-12.183 64.661,-8.289 90.709,8.692l183.798,119.813Z" style="fill:url(#_Radial6);"/>
-                                    <clipPath id="_clip7">
-                                        <path d="M315.306,321.128c-4.837,-3.198 -5.115,-7.609 -0.623,-9.851l66.263,-33.074c4.493,-2.243 12.056,-1.468 16.893,1.731l104.663,69.209c4.837,3.199 5.115,7.61 0.623,9.852l-66.263,33.074c-4.493,2.242 -12.055,1.467 -16.892,-1.731l-104.664,-69.21Z"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip7)">
-                                        <path d="M389.056,273.745l-83.189,41.522l122.885,81.259l83.189,-41.522l-122.885,-81.259Z" style="fill:rgb(48,48,48);"/>
-                                    </g>
-                                    <clipPath id="_clip8">
-                                        <path d="M468.228,374.364c1.341,-0.669 1.258,-1.985 -0.186,-2.939c-1.443,-0.955 -3.699,-1.186 -5.04,-0.517c-1.341,0.669 -1.258,1.985 0.186,2.94c1.443,0.954 3.699,1.185 5.04,0.516Z"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip8)">
-                                        <path d="M465.429,369.697l-4.855,2.423l5.227,3.456l4.854,-2.423l-5.226,-3.456Z"/>
-                                    </g>
-                                    <path d="M424.659,388.642l-105.697,-69.894l74.265,-37.067l105.697,69.893l-74.265,37.068Z"/>
-                                </g>
-                            </g>
-                            <g>
-                                <path d="M1094.74,537.324l-96.716,47.562l-89.548,-59.977l96.716,-47.562l89.548,59.977Z" style="fill:rgb(98,0,234);fill-opacity:0.2;"/>
-                                <path d="M990.854,692.426l7.167,-107.54l96.716,-47.562l-7.167,107.54l-96.716,47.562Z" style="fill:rgb(98,0,234);fill-opacity:0.4;"/>
-                                <path d="M990.854,692.426l7.167,-107.54l-89.548,-59.977l-7.167,107.54l89.548,59.977Z" style="fill:rgb(98,0,234);"/>
-                            </g>
-                            <g>
-                                <g>
-                                    <path d="M999,289.003c0,-44.383 -36.033,-80.416 -80.415,-80.416l-263.17,0c-44.382,0 -80.415,36.033 -80.415,80.416l0,160.83c0,44.382 36.033,80.415 80.415,80.415l263.17,0c44.382,0 80.415,-36.033 80.415,-80.415l0,-160.83Z" style="fill:url(#_Radial9);"/>
-                                    <clipPath id="_clip10">
-                                        <path d="M652.666,289.788c0,-6.861 5.562,-12.424 12.424,-12.424l252.036,0c6.861,0 12.424,5.562 12.424,12.424l0,161.202c0,6.862 -5.563,12.424 -12.424,12.424l-252.036,0c-6.862,0 -12.424,-5.562 -12.424,-12.424l0,-161.202Z"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip10)">
-                                        <rect x="652.222" y="276.921" width="277.771" height="186.937" style="fill:rgb(48,48,48);"/>
-                                    </g>
-                                    <clipPath id="_clip11">
-                                        <path d="M791.059,287.659c0.588,0 1.065,-0.477 1.065,-1.065c0,-0.588 -0.477,-1.065 -1.065,-1.065c-0.588,0 -1.065,0.477 -1.065,1.065c0,0.588 0.477,1.065 1.065,1.065Z"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip11)">
-                                        <rect x="789.994" y="285.529" width="2.13" height="2.13"/>
-                                    </g>
-                                    <clipPath id="_clip12">
-                                        <path d="M621.555,458.26c-0.098,-0.001 -0.177,0.079 -0.177,0.176l0,3.031c0,0 9.375,4.906 42.629,5.538c33.343,-0.076 242.328,0 242.328,0c0,0 40.786,0.45 54.404,-5.538l0,-2.836c0,-0.098 -0.079,-0.177 -0.177,-0.177l-339.007,-0.194Z"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip12)">
-                                        <rect x="620.934" y="457.816" width="340.249" height="9.64" style="fill:rgb(48,48,48);"/>
-                                    </g>
-                                    <clipPath id="_clip13">
-                                        <path d="M756.73,458.537l68.657,0l0,0.777c0,0.86 -0.695,1.61 -1.553,1.666c0,0 -7.094,0.669 -32.64,0.669c-25.545,0 -32.911,-0.671 -32.911,-0.671c-0.858,-0.059 -1.553,-0.804 -1.553,-1.664l0,-0.777Z"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip13)">
-                                        <rect x="756.287" y="458.093" width="69.544" height="4"/>
-                                    </g>
-                                    <clipPath id="_clip14">
-                                        <rect x="665.515" y="293.12" width="251.088" height="155.609"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip14)">
-                                        <rect x="665.484" y="293.072" width="251.149" height="155.659"/>
-                                    </g>
-                                    <clipPath id="_clip15">
-                                        <rect x="665.484" y="293.072" width="251.149" height="155.659" clip-rule="nonzero"/>
-                                    </clipPath>
-                                    <g clip-path="url(#_clip15)">
-                                        <rect x="665.515" y="293.12" width="251.088" height="155.609" style="stroke:black;stroke-width:8px;"/>
-                                    </g>
-                                </g>
-                            </g>
-                            <g>
-                                <path d="M816.843,121.699l-36.129,-2.135l-16.216,-32.356l36.129,2.135l16.216,32.356Z" style="fill:rgb(98,0,234);fill-opacity:0.2;"/>
-                                <path d="M760.801,149.786l19.913,-30.222l36.129,2.135l-19.913,30.221l-36.129,-2.134Z" style="fill:rgb(98,0,234);fill-opacity:0.4;"/>
-                                <path d="M760.801,149.786l19.913,-30.222l-16.216,-32.356l-19.914,30.222l16.217,32.356Z" style="fill:rgb(98,0,234);"/>
-                            </g>
-                            <g>
-                                <path d="M1042.16,281.309l-26.84,24.279l-34.447,-11.105l26.84,-24.279l34.447,11.105Z" style="fill:rgb(98,0,234);fill-opacity:0.2;"/>
-                                <path d="M1022.92,340.972l-7.606,-35.384l26.84,-24.279l7.606,35.384l-26.84,24.279Z" style="fill:rgb(98,0,234);fill-opacity:0.4;"/>
-                                <path d="M1022.92,340.972l-7.606,-35.384l-34.447,-11.105l7.606,35.384l34.447,11.105Z" style="fill:rgb(98,0,234);"/>
-                            </g>
-                            <g>
-                                <clipPath id="_clip16">
-                                    <path d="M744.584,293.432c0,-33.437 -27.105,-60.542 -60.542,-60.542c-33.437,0 -60.543,27.105 -60.543,60.542c0,33.437 27.106,60.543 60.543,60.543c33.437,0 60.542,-27.106 60.542,-60.543Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip16)">
-                                    <path d="M617.445,226.835l0,133.194l133.194,0l0,-133.194l-133.194,0Z" style="fill:rgb(26,238,194);fill-opacity:0.2;"/>
-                                </g>
-                                <clipPath id="_clip17">
-                                    <path d="M720.367,293.432c0,-20.062 -16.263,-36.325 -36.325,-36.325c-20.062,0 -36.326,16.263 -36.326,36.325c0,20.062 16.264,36.326 36.326,36.326c20.062,0 36.325,-16.264 36.325,-36.326Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip17)">
-                                    <path d="M641.662,251.052l0,84.76l84.76,0l0,-84.76l-84.76,0Z" style="fill:rgb(26,238,194);fill-opacity:0.2;"/>
-                                </g>
-                                <clipPath id="_clip18">
-                                    <path d="M702.205,293.432c0,-10.031 -8.132,-18.163 -18.163,-18.163c-10.031,0 -18.163,8.132 -18.163,18.163c0,10.031 8.132,18.163 18.163,18.163c10.031,0 18.163,-8.132 18.163,-18.163Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip18)">
-                                    <path d="M659.825,269.215l0,48.434l48.434,0l0,-48.434l-48.434,0Z" style="fill:rgb(22,240,175);"/>
-                                </g>
-                            </g>
-                            <g>
-                                <clipPath id="_clip19">
-                                    <path d="M823.684,372.708c0,-21.843 -17.707,-39.55 -39.55,-39.55c-21.842,0 -39.55,17.707 -39.55,39.55c0,21.843 17.708,39.55 39.55,39.55c21.843,0 39.55,-17.707 39.55,-39.55Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip19)">
-                                    <path d="M740.629,329.203l0,87.01l87.01,0l0,-87.01l-87.01,0Z" style="fill:rgb(26,238,194);fill-opacity:0.2;"/>
-                                </g>
-                                <clipPath id="_clip20">
-                                    <path d="M807.864,372.708c0,-13.106 -10.624,-23.73 -23.73,-23.73c-13.105,0 -23.73,10.624 -23.73,23.73c0,13.106 10.625,23.73 23.73,23.73c13.106,0 23.73,-10.624 23.73,-23.73Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip20)">
-                                    <path d="M756.449,345.023l0,55.37l55.37,0l0,-55.37l-55.37,0Z" style="fill:rgb(26,238,194);fill-opacity:0.2;"/>
-                                </g>
-                                <clipPath id="_clip21">
-                                    <path d="M795.999,372.708c0,-6.553 -5.312,-11.865 -11.865,-11.865c-6.552,0 -11.865,5.312 -11.865,11.865c0,6.553 5.313,11.865 11.865,11.865c6.553,0 11.865,-5.312 11.865,-11.865Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip21)">
-                                    <path d="M768.314,356.888l0,31.64l31.64,0l0,-31.64l-31.64,0Z" style="fill:rgb(22,240,175);"/>
-                                </g>
-                            </g>
-                            <g>
-                                <clipPath id="_clip22">
-                                    <path d="M886.964,209.16c0,-21.843 -17.707,-39.55 -39.55,-39.55c-21.842,0 -39.55,17.707 -39.55,39.55c0,21.843 17.708,39.55 39.55,39.55c21.843,0 39.55,-17.707 39.55,-39.55Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip22)">
-                                    <path d="M803.909,165.655l0,87.01l87.01,0l0,-87.01l-87.01,0Z" style="fill:rgb(26,238,194);fill-opacity:0.2;"/>
-                                </g>
-                                <clipPath id="_clip23">
-                                    <path d="M871.144,209.16c0,-13.106 -10.624,-23.73 -23.73,-23.73c-13.105,0 -23.73,10.624 -23.73,23.73c0,13.105 10.625,23.73 23.73,23.73c13.106,0 23.73,-10.625 23.73,-23.73Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip23)">
-                                    <path d="M819.729,181.475l0,55.37l55.37,0l0,-55.37l-55.37,0Z" style="fill:rgb(26,238,194);fill-opacity:0.2;"/>
-                                </g>
-                                <clipPath id="_clip24">
-                                    <path d="M859.279,209.16c0,-6.553 -5.312,-11.865 -11.865,-11.865c-6.552,0 -11.865,5.312 -11.865,11.865c0,6.553 5.313,11.865 11.865,11.865c6.553,0 11.865,-5.312 11.865,-11.865Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip24)">
-                                    <path d="M831.594,193.34l0,31.64l31.64,0l0,-31.64l-31.64,0Z" style="fill:rgb(22,240,175);"/>
-                                </g>
-                            </g>
-                            <g>
-                                <clipPath id="_clip25">
-                                    <path d="M986.842,252.092c0,-21.842 -17.707,-39.55 -39.55,-39.55c-21.843,0 -39.55,17.708 -39.55,39.55c0,21.843 17.707,39.55 39.55,39.55c21.843,0 39.55,-17.707 39.55,-39.55Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip25)">
-                                    <path d="M903.787,208.587l0,87.01l87.01,0l0,-87.01l-87.01,0Z" style="fill:rgb(26,238,194);fill-opacity:0.2;"/>
-                                </g>
-                                <clipPath id="_clip26">
-                                    <path d="M971.022,252.092c0,-13.105 -10.624,-23.73 -23.73,-23.73c-13.106,0 -23.73,10.625 -23.73,23.73c0,13.106 10.624,23.73 23.73,23.73c13.106,0 23.73,-10.624 23.73,-23.73Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip26)">
-                                    <path d="M919.607,224.407l0,55.37l55.37,0l0,-55.37l-55.37,0Z" style="fill:rgb(26,238,194);fill-opacity:0.2;"/>
-                                </g>
-                                <clipPath id="_clip27">
-                                    <path d="M959.157,252.092c0,-6.552 -5.312,-11.865 -11.865,-11.865c-6.553,0 -11.865,5.313 -11.865,11.865c0,6.553 5.312,11.865 11.865,11.865c6.553,0 11.865,-5.312 11.865,-11.865Z"/>
-                                </clipPath>
-                                <g clip-path="url(#_clip27)">
-                                    <path d="M931.472,236.272l0,31.64l31.64,0l0,-31.64l-31.64,0Z" style="fill:rgb(22,240,175);"/>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                    <defs>
-                        <radialGradient id="_Radial2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(52.7929,31.9477,-46.6537,77.0943,1144.82,287.659)"><stop offset="0" style="stop-color:white;stop-opacity:1"/><stop offset="0.5" style="stop-color:white;stop-opacity:0.8"/><stop offset="0.75" style="stop-color:white;stop-opacity:0.211765"/><stop offset="1" style="stop-color:white;stop-opacity:0.0117647"/></radialGradient>
-                        <radialGradient id="_Radial6" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-116.124,-65.5065,-59.9088,43.1619,405.892,344.759)"><stop offset="0" style="stop-color:white;stop-opacity:1"/><stop offset="0.31" style="stop-color:white;stop-opacity:0.8"/><stop offset="0.69" style="stop-color:white;stop-opacity:0.247059"/><stop offset="1" style="stop-color:white;stop-opacity:0.0117647"/></radialGradient>
-                        <radialGradient id="_Radial9" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(178.167,-18.3372,12.8195,134.487,799.819,370.76)"><stop offset="0" style="stop-color:white;stop-opacity:1"/><stop offset="0.68" style="stop-color:white;stop-opacity:0.8"/><stop offset="1" style="stop-color:white;stop-opacity:0.0117647"/></radialGradient>
-                    </defs>
+<body>
+    <header id="top">
+        <nav>
+            <a href="/" id="home">
+                <svg id="naamio-mask-logo" width="4em" height="auto" viewBox="0 0 58 32" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="/assets/images/vectors/symbol-defs.svg#naamio-mask-logo" href="/assets/images/vectors/symbol-defs.svg#naamio-mask-logo"
+                    />
                 </svg>
-                <div>
-                    <blockquote>
-                        Naamio is light and fast - get your site live, online in a matter of minutes with full 
-                        security and scalability as default.
-                    </blockquote>
-                </div>
-            </section>
-            <section class="features small">
-                <div>
-                    <h3>Optimized</h3>
-                    <p>
-                        We leave many optimizations up to implementation, but 
-                        we understand image and file optimizations can be delicate 
-                        and dependent on context. So we provide a just-in-time 
-                        optimization module for images and files to support faster 
-                        and more efficient rendering of assets. With caching as-standard, 
-                        your applications get faster the more visits you get.
-                    </p>
-                </div>
-                <div>
-                    <h3>Secure</h3>
-                    <p>
-                        We provide a variety of encryption methods, cross-region 
-                        mirroring, and key storage. We can't see the content of 
-                        your files, or databases, ever, and we don't think anyone 
-                        should. The artificial intelligent operators manage the 
-                        keys for you, and are designed to detect illegitimate access.
-                    </p>
-                </div>
-                <div>
-                    <h3>Global</h3>
-                    <p>
-                        We support cross-region deployment, multiple languages, 
-                        multiple currencies, and cross-provider cluster orchestration. 
-                        Indeed, you can deploy to AWS, Azure, Digital Ocean (default), 
-                        and GCE easily, and if you want to deploy to your 
-                        own infrastructure, you can do that just as easily. 
-                    </p>
-                </div>
-            </section>
-            <section class="questions-contact">
-                <div>
-                    <h2>
-                        Have some <strong>questions?</strong>
-                    </h2>
-                    <p>Get in touch for all the answers.</p>
-                </div>
-                <div class="button-container">
-                    <button>contact us</button>
-                </div>
-            </section>
-            <section id="breadcrumbs">
-                <a href="/" id="breadcrumbs-home">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="58" height="32" viewBox="0 0 58 32">
+            </a>
+            <div id="dropdown-wrapper">
+                <button class="dropdown-button">
+                    Projects
+                </button>
+                <nav id="dropdown-navlist">
+                    <ul>
+                        <li>
+                            <a href="/projects/naamio">
+                                <h3>
+                                    Naamio
+                                </h3>
+                                <p>
+                                    The lightweight web application platform
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/projects/kauppa">
+                                <h3>
+                                    Kauppa
+                                </h3>
+                                <p>
+                                    The decentralized eCommerce platform
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/projects/pomo">
+                                <h3>
+                                    Pomo
+                                </h3>
+                                <p>
+                                    The pluggable admin platform
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="button" href="/sign-up">
+                    Sign up
+                </a>
+            </div>
+        </nav>
+        <section>
+            <h1>Naamio Cloud</h1>
+
+        </section>
+
+    </header>
+    <img id="naamio-flow" alt="the Naamio wave" src="{% asset "/images/vectors/naamio-flow.svg" %}" />
+    <main role="main">
+        <section class="features">
+            <div>
+                <h2>Make it <strong>serverless.</strong></h2>
+                <p>
+                    Naamio was built to support Functions-as-a-Service. This allows you to deploy a brand new, fully functional, custom web application
+                    with just a few lines of code, in any language you choose: Go, JavaScript, Python, Ruby, Rust, and Swift
+                    are all supported.
+                </p>
+            </div>
+            <div>
+                <svg id="serverless" width="100%" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="/assets/images/vectors/symbol-defs.svg#serverless" href="/assets/images/vectors/symbol-defs.svg#serverless"
+                    />
+                </svg>
+            </div>
+        </section>
+        <section class="features">
+            <div>
+                <h2>Make it <strong>intelligent.</strong></h2>
+                <p>
+                    Our infrastructure is managed with custom deep learning modules. Operators powered by neural networks enable predictive artificial
+                    intelligence-inspired management of networks, storage, compilation, and security to keep performance,
+                    scalability, and stability optimum.
+                </p>
+            </div>
+            <div>
+                <svg id="intelligent" width="100%" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="/assets/images/vectors/symbol-defs.svg#intelligent" href="/assets/images/vectors/symbol-defs.svg#intelligent"
+                    />
+                </svg>
+            </div>
+        </section>
+        <section class="features">
+            <div>
+                <h2>Make it <strong>isomorphic.</strong></h2>
+                <p>
+                    Although we fully endorse the use of standard visual libraries, such as React and Vue, our platform is designed with isomorphic
+                    best practices in-mind. Our templating engine supports both server- and browser-based rendering so you
+                    can focus on what you want to build without sacrificing performance.
+                </p>
+            </div>
+            <div>
+                <svg id="isomorphic" width="100%" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="/assets/images/vectors/symbol-defs.svg#isomorphic" href="/assets/images/vectors/symbol-defs.svg#isomorphic"
+                    />
+                </svg>
+            </div>
+        </section>
+        <section class="full-width-feature">
+            <img id="naamio-feature-image" alt="the Naamio collective illustration" src="{% asset "/images/vectors/naamio-feature-image.svg" %}" />
+            <div>
+                <blockquote>
+                    Naamio is light and fast - get your site live, online in a matter of minutes with full security and scalability as default.
+                </blockquote>
+            </div>
+        </section>
+        <section class="features-small">
+            <div>
+                <h3>Optimized</h3>
+                <p>
+                    We leave many optimizations up to implementation, but we understand image and file optimizations can be delicate and dependent
+                    on context. So we provide a just-in-time optimization module for images and files to support faster and
+                    more efficient rendering of assets. With caching as-standard, your applications get faster the more visits
+                    you get.
+                </p>
+            </div>
+            <div>
+                <h3>Secure</h3>
+                <p>
+                    We provide a variety of encryption methods, cross-region mirroring, and key storage. We can't see the content of your files,
+                    or databases, ever, and we don't think anyone should. The artificial intelligent operators manage the
+                    keys for you, and are designed to detect illegitimate access.
+                </p>
+            </div>
+            <div>
+                <h3>Global</h3>
+                <p>
+                    We support cross-region deployment, multiple languages, multiple currencies, and cross-provider cluster orchestration. Indeed,
+                    you can deploy to AWS, Azure, Digital Ocean (default), and GCE easily, and if you want to deploy to your
+                    own infrastructure, you can do that just as easily.
+                </p>
+            </div>
+        </section>
+        <section class="questions-contact">
+            <div>
+                <h2>
+                    Have some <strong>questions?</strong>
+                </h2>
+                <p>Get in touch for all the answers.</p>
+            </div>
+            <div class="button-container">
+                <a class="button" href="/contact">contact us</a>
+            </div>
+        </section>
+        <section id="breadcrumbs">
+            <a href="/" id="breadcrumbs-home">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="58" height="32" viewBox="0 0 58 32">
                     <title>naamio-mask-logo</title>
                     <path fill="var(--dark-neutral-color)" d="M1.333 7.711c0.268-0.807 0.853-1.581 2.12-2.234 2.547-1.314 9.37-4.677 9.37-4.677s8.841 2.338 11.676 2.338h9.353c2.835 0 11.718-2.338 11.718-2.338s6.782 3.363 9.329 4.677c1.266 0.653 1.851 1.426 2.12 2.231-0.295 0.312-0.641 0.564-0.993 0.816l0.273 0.38c0.294-0.211 0.59-0.424 0.854-0.668 0.118 0.647 0.086 1.302 0.086 1.918 0 11.69-8.482 21.047-14.031 21.047-5.528 0-11.294-4.643-13.758-4.677h-0.525c-2.464 0.034-8.251 4.677-13.779 4.677-5.549 0-14.031-9.285-14.031-21.047 0-0.616-0.032-1.271 0.086-1.917 0.264 0.242 0.557 0.457 0.85 0.667l0.272-0.38c-0.348-0.249-0.698-0.504-0.989-0.812zM34.466 20.952c0.768-0.593 2.5-1.289 6.403-1.445 3.825-0.152 6.913-3.825 7.016-7.016-3.902-1.227-5.904-1.215-7.016-1.169s-7.016-0.604-7.016 8.184v2.199l-0.199 1.095c-0.057 0.054-0.093 0.13-0.093 0.215 0 0.161 0.131 0.293 0.292 0.293s0.293-0.132 0.293-0.293c0-0.047-0.011-0.091-0.031-0.131l0.351-1.932zM24.5 21.706v-2.199c0-8.789-5.904-8.139-7.016-8.184s-3.113-0.058-7.016 1.169c0.103 3.191 3.191 6.863 7.016 7.016 3.9 0.155 5.633 0.845 6.401 1.435l0.353 1.942c-0.020 0.040-0.031 0.084-0.031 0.131 0 0.161 0.131 0.293 0.293 0.293s0.292-0.132 0.292-0.293c0-0.085-0.036-0.161-0.093-0.215l-0.199-1.095zM49.966 12.028c-0.064-0.176-0.168-0.437-0.168-0.437-0.358 0.13-0.717 0.256-1.077 0.378-0.078 0.026-0.156 0.053-0.234 0.079l0.148 0.443c0.446-0.149 0.89-0.302 1.332-0.464zM8.551 11.592c-0.049-0.018-0.16 0.44-0.16 0.44 0.439 0.16 0.88 0.313 1.324 0.461l0.148-0.443c-0.44-0.147-0.876-0.299-1.312-0.457zM52.583 10.968c-0.064-0.142-0.128-0.284-0.192-0.427l-0.11 0.050c-0.321 0.143-0.644 0.28-0.969 0.415-0.068 0.027-0.135 0.056-0.203 0.083l0.175 0.434 0.076-0.031c0.41-0.168 0.819-0.342 1.224-0.523zM6.011 10.565c-0.018-0.008-0.036-0.016-0.053-0.024l-0.192 0.427 0.111 0.050c0.392 0.175 0.788 0.343 1.188 0.504l0.166-0.438c-0.409-0.167-0.817-0.339-1.22-0.52zM55.102 9.676c-0.079-0.135-0.158-0.269-0.237-0.404l-0.064 0.038c-0.309 0.18-0.622 0.352-0.938 0.518-0.072 0.038-0.144 0.074-0.216 0.112l0.213 0.416 0.034-0.017c0.409-0.21 0.813-0.429 1.209-0.663zM3.512 9.288c-0.009-0.005-0.019-0.010-0.027-0.016l-0.238 0.404 0.028 0.016c0.398 0.233 0.805 0.454 1.216 0.664l0.213-0.416c-0.404-0.206-0.801-0.423-1.192-0.651z"></path>
-                    </svg>
-                    <h4>Naamio</h4>
-                </a>
-                <a href="#top" id="arrow-up">
-                    <svg id="arrow-up" width="2em" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="/assets/images/vectors/symbol-defs.svg#arrow-up" href="/assets/images/vectors/symbol-defs.svg#arrow-up" />
-                    </svg>
-                </a>
-            </section>
-        </main>
-        <footer>
-            <div class="contact-button-box">
-                <button>contact</button>
+                </svg>
+                <h4>Naamio</h4>
+            </a>
+            <a href="#top" id="arrow-up">
+                <svg id="arrow-up" width="2em" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="/assets/images/vectors/symbol-defs.svg#arrow-up" href="/assets/images/vectors/symbol-defs.svg#arrow-up"
+                    />
+                </svg>
+            </a>
+        </section>
+    </main>
+    <footer>
+            <div class="badge-box">
+                <svg id="naamio-badge" width="4em" height="auto" viewBox="0 0  22 32" xmlns="http://www.w3.org/2000/svg">
+                    <title>This site is powered by Naamio</title>
+                    <use xlink:href="/assets/images/vectors/symbol-defs.svg#naamio-badge" href="/assets/images/vectors/symbol-defs.svg#naamio-badge"
+                    />
+                </svg>
             </div>
             <ul class="social-box">
                 <li>
-                    <a>
+                    <a href="https://twitter.com/Hellonaamio">
                         <svg id="twitter-logo" width="2em" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <title>Twitter link icon</title>
                             <use xlink:href="/assets/images/vectors/symbol-defs.svg#twitter" href="/assets/images/vectors/symbol-defs.svg#twitter" />
                         </svg>
                         Twitter
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="https://www.facebook.com/naamio/">
                         <svg id="facebook-logo" width="2em" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="/assets/images/vectors/symbol-defs.svg#facebook" href="/assets/images/vectors/symbol-defs.svg#facebook" />
+                            <title>Facebook link icon</title>
+                            <use xlink:href="/assets/images/vectors/symbol-defs.svg#facebook" href="/assets/images/vectors/symbol-defs.svg#facebook"
+                            />
                         </svg>
                         Facebook
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="https://github.com/Naamio">
                         <svg id="github-logo" width="2em" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub link icon</title>
                             <use xlink:href="/assets/images/vectors/symbol-defs.svg#github" href="/assets/images/vectors/symbol-defs.svg#github" />
                         </svg>
                         GitHub
                     </a>
                 </li>
             </ul>
-            <div class="badge-box">
-                <svg id="naamio-badge" width="4em" height="auto" viewBox="0 0  22 32" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="/assets/images/vectors/symbol-defs.svg#naamio-badge" href="/assets/images/vectors/symbol-defs.svg#naamio-badge" />
-                </svg>
+            <div class="contact-button-box">
+                <a class="button" href="/contact">contact</a>
             </div>
         </footer>
-    </body>
+</body>
+
 </html>

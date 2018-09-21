@@ -10,12 +10,14 @@ header {
     display: -webkit-flex;
     flex-flow: column;
     -webkit-flex-flow: column;
-    min-height: 100vh;
+    height: 80vh;
+    min-height: 28em;
 }
 
 header h2 {
     color: var(--light-neutral-color);
     filter: drop-shadow(1px 1px 0.5px var(--primary-complementary-color));
+    text-align: center;
 }
 
 header nav {
@@ -60,11 +62,13 @@ div#dropdown-wrapper .button {
 }
 
 .dropdown-button:hover,
-.dropdown-button:active {
+.dropdown-button:active,
+.dropdown-button.active {
     background-color: var(--dark-neutral-color);
     transition: 1s;
 }
 
+.dropdown-button.active + nav#dropdown-navlist,
 .dropdown-button:hover + nav#dropdown-navlist,
 .dropdown-button:active + nav#dropdown-navlist,
 nav#dropdown-navlist:hover {
@@ -124,6 +128,7 @@ header > section {
     flex-grow: 1;
     justify-content: center;
     -webkit-justify-content: center;
+    padding: 8vmmin;
     position: absolute;
     top: 0;
     width: 100%;

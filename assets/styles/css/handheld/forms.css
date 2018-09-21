@@ -56,6 +56,11 @@ input[type="button"]:focus {
     color: var(--primary-action-color);
 }
 
+input:focus,
+input:focus-within {
+    outline: var(--primary-action-color) auto 5px;
+}
+
 .button:active,
 button:active,
 input[type="submit"]:active,
@@ -180,7 +185,9 @@ button[disabled]:active {
 
 
 span {
-    display: block;
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 0 auto;
     margin-top: 3em;
 }
 
