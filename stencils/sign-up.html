@@ -115,22 +115,25 @@
     </header>
     <main role="main">
         <section>
-            <form>
+            <form id="early-access-form" action="https://formspree.io/hello@naamio.cloud" method="POST">
                 <legend>Sign up for early access</legend>
                 <fieldset>
                     <span>
                         <label for="signup-email" class="required" title="required">Email address</label>
-                        <input id="signup-email" type="email" placeholder="name@host.tld" required="required" />
+                        <input id="signup-email" name="_replyto" type="email" placeholder="name@host.tld" required="required" />
                     </span>
                     <span>
                         <label for="intended-use" class="required" title="required">Intended use</label>
-                        <textarea id="intended-use" type="text" placeholder="What will you use the platform for?"></textarea>
+                        <textarea id="intended-use" name="intended-use" type="text" placeholder="What will you use the platform for?"></textarea>
                     </span>
 
                 </fieldset>
                 <button type="submit">
                     Send
                 </button>
+                <input type="hidden" name="_next" value="/early-access.html" />
+                <input type="hidden" name="_subject" value="New early access request!" />
+                <input type="text" name="_gotcha" style="display:none" />
             </form>
         </section>
         <section id="breadcrumbs">
