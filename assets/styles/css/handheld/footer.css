@@ -59,4 +59,10 @@ ul.social-box a {
 
 ul.social-box a svg {
     margin-right: 1em;
+    transition: var(--default-transition-style);
+}
+
+ul.social-box a:hover svg {
+    filter: drop-shadow(0px 0px 5px var(--primary-action-color));
+    transition: var(--default-transition-style);
 }

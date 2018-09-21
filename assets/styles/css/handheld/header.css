@@ -63,7 +63,8 @@ div#dropdown-wrapper .button {
 
 .dropdown-button:hover,
 .dropdown-button:active,
-.dropdown-button.active {
+.dropdown-button.active,
+nav#dropdown-navlist:hover .dropdown-button {
     background-color: var(--dark-neutral-color);
     transition: 1s;
 }
@@ -106,9 +107,10 @@ nav#dropdown-navlist ul {
     margin-bottom: 4em;
 }
 
-nav#dropdown-navlist h3 {
+nav#dropdown-navlist a h3 {
     color: var(--primary-action-color);
     margin-bottom: 0;
+    padding-right: 0;
     transition: var(--default-transition-style);
 }
 
@@ -136,7 +138,7 @@ header > section {
 
 #dropdown-navlist a:hover h3 {
     color: var(--primary-complementary-color);
-    transform: translateX(-1em);
+    padding-right: 2em;
     transition: var(--default-transition-style);
 }
 

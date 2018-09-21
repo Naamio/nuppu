@@ -57,8 +57,10 @@ input[type="button"]:focus {
 }
 
 input:focus,
-input:focus-within {
-    outline: var(--primary-action-color) auto 5px;
+input:focus-within,
+textarea:focus,
+textarea:focus-within {
+    outline: var(--primary-action-color) auto 2px;
 }
 
 .button:active,
