@@ -1,4 +1,4 @@
-FROM naamio/naamio:edge
+FROM naamio/naamio:latest
 
 LABEL authors="Gabrielle Iskandar <gabiskandar@gmail.com>"
 LABEL maintainer="Gabrielle Iskandar <gabiskandar@gmail.com>"
