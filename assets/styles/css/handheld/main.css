@@ -5,21 +5,31 @@
  */
 
 main > section {
-    background-color: var(--light-neutral-color);
-    min-height: 100vh;
-    width: 100%;
-}
-
-main > section {
     align-items: center;
     -webkit-align-items: center;
+    background-color: var(--light-neutral-color);
     display: flex;
     display: -webkit-flex;
     flex: 0 0 auto;
     flex-wrap: wrap;
-    justify-content: center;
-    -webkit-justify-content: center;
-    padding: 10%;   
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    min-height: 80vh;
+    padding: 8vmax; 
+    width: 100%;
+}
+
+main > section[class~="features"] > div {
+    max-width: 56ch;
+    min-width: 16em;
+    width: 50%;
+}
+
+main > section.features > div:nth-of-type(2) {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 0 44%;
+    width: 44%;
 }
 
 main > section.full-width-feature {
@@ -27,17 +37,11 @@ main > section.full-width-feature {
     padding: 0;
 }
 
-main > section.features > div {
-    max-width: 56ch;
-    min-width: 16em;
-    width: 50%;
-}
-
-main > section.features h3 {
+main > section[class~="features"] h3 {
     color: var(--primary-complementary-color);
 }
 
-section.features div > svg {
+section[class~="features"] div > svg {
     max-width: 30em;
     padding: 10%;
 }
@@ -49,7 +53,7 @@ section.questions-contact {
     display: -webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 80vh;
+    min-height: unset;
     width: 100%;
 }
 
@@ -67,6 +71,7 @@ section.questions-contact > div {
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 2;
+    margin: 4vmax;
     width: 100%;
 }
 
@@ -74,7 +79,7 @@ div.button-container {
     flex-grow: 1;
 }
 
-.features.small div {
+.features-small div {
     margin-bottom: 4em;
 }
 
@@ -133,7 +138,7 @@ blockquote::after {
     bottom: -2em;
 }
 
-section.features.small {
+section.features-small {
     flex-direction: column;
 }
 

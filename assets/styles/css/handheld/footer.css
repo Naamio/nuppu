@@ -16,7 +16,6 @@ footer {
     justify-content: space-evenly;
     -webkit-justify-content: space-evenly;
     max-width: 100%;
-    min-height: 50vh;
     padding: 10vmin;
 }
 
@@ -38,7 +37,6 @@ footer > ul.social-box {
 
 footer > .badge-box {
     align-content: flex-end;
-    flex-grow: 2;
 }
 
 ul.social-box a {

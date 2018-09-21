@@ -10,11 +10,7 @@
     }
 
     footer > ul.social-box {
-        align-items: flex-start;
-        -webkit-align-items: flex-start;
+        flex: 0 0 50%;
     }
 
-    footer > .badge-box svg {
-        align-self: flex-end;
-    }
 }
