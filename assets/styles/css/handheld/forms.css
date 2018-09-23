@@ -81,6 +81,7 @@ input[type="button"]:active {
 form {
     background-color: var(--ligh-neutral-color);
     border: none;
+    max-width: 76ch;
     width: 100%;
 }
 

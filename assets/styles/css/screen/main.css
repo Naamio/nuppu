@@ -5,6 +5,10 @@
  */
 
 @media (min-width: 667px) {
+    main > section {
+        padding: 4vmax 8vmax; 
+    }
+
     section.questions-contact > div {
         width: unset;
     }

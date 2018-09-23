@@ -10,7 +10,7 @@ header {
     display: -webkit-flex;
     flex-flow: column;
     -webkit-flex-flow: column;
-    height: 80vh;
+    height: 70vh;
     min-height: 28em;
 }
 
@@ -31,8 +31,14 @@ header nav {
 }
 
 a#home {
-    display: none;
-    margin: auto 2em auto 2em;
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    height: 4em;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 6em;
+    width: auto;
 }
 
 div#dropdown-wrapper {
@@ -46,6 +52,8 @@ div#dropdown-wrapper {
 div#dropdown-wrapper button,
 div#dropdown-wrapper .button {
     height: 100%;
+    max-width: 10em;
+    width: 50%;
     z-index: 3;
 }
 
@@ -140,10 +148,4 @@ header > section {
     color: var(--primary-complementary-color);
     padding-right: 2em;
     transition: var(--default-transition-style);
-}
-
-@media (min-width: 480px) {
-    a#home {
-        display: block;
-    }
 }

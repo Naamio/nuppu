@@ -14,8 +14,8 @@ main > section {
     flex-wrap: wrap;
     justify-content: space-around;
     -webkit-justify-content: space-around;
-    min-height: 80vh;
-    padding: 8vmax; 
+    min-height: 60vh;
+    padding: 2em; 
     width: 100%;
 }
 
@@ -33,6 +33,8 @@ main > section.features > div:nth-of-type(2) {
 }
 
 main > section.full-width-feature {
+    margin-top: 4vmax;
+    margin-bottom: 4vmax;
     min-height: 80vh;
     padding: 0;
 }
@@ -152,4 +154,36 @@ section.features-small {
 #naamio-flow {
     margin-top: -21.42vw;
     width: 200%;
+}
+
+@supports (display: grid) {
+    section.features {
+        display: grid;
+        display: -webkit-grid;
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+        grid-template-rows: auto;
+        justify-items: center;
+        -webkit-justify-items: center;
+        grid-gap: 2em;
+        -webkit-grid-gap: 2em;
+    }
+
+    main > section[class~="features"] > div {
+        max-width: 56ch;
+        width: unset
+    }
+    
+    main > section.features > div:nth-of-type(2) {
+        display: unset;
+        width: 100%;
+        max-width: 40ch;
+        min-width: 14em;
+    }
+}
+
+@media (min-width: 480px) {
+    html {
+        font-size: 16px;
+        transition: var(--default-transition-style);
+    }
 }
