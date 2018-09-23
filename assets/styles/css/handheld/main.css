@@ -124,8 +124,22 @@ section#breadcrumbs h4 {
     min-height: 50vh;
 }
 
-.full-width-feature img {
+#naamio-flow {
+    height: 42.84vw;
+    margin-top: -21.42vw;
+    object-fit: cover;
+    object-position: left;
     width: 100%;
+}
+
+.full-width-feature img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+#naamio-feature-image {
+    min-height: 24em;
 }
 
 blockquote::before,
@@ -149,11 +163,6 @@ blockquote::after {
 
 section.features-small {
     flex-direction: column;
-}
-
-#naamio-flow {
-    margin-top: -21.42vw;
-    width: 200%;
 }
 
 @supports (display: grid) {

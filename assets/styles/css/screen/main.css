@@ -16,6 +16,8 @@
 
 @media (min-width: 960px) {
     #naamio-flow {
+        height: 21.42vw;
+        height: 100%;
         margin-top: -10.71vw;
         width: 100%;
     }
