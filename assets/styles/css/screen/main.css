@@ -6,7 +6,7 @@
 
 @media (min-width: 667px) {
     main > section {
-        padding: 4vmax 8vmax; 
+        padding: 4vmax 10vmin; 
     }
 
     section.questions-contact > div {

@@ -43,12 +43,14 @@ main > section.features-small h3 {
     color: var(--primary-complementary-color);
 }
 
-section[class~="features"] div > svg {
+section[class~="features"] div > img {
     height: 100%;
     flex: 1 1 100%;
     margin: auto;
     max-width: 30em;
+    object-fit: contain;
     padding: 10%;
+    width: 100%;
 }
 
 section.questions-contact {
@@ -59,6 +61,7 @@ section.questions-contact {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: unset;
+    padding: 10vmin;
     width: 100%;
 }
 
@@ -69,8 +72,6 @@ section.questions-contact p {
 }
 
 section.questions-contact > div {
-    align-content: center;
-    -webkit-align-content: center;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
@@ -110,7 +111,8 @@ section#breadcrumbs #breadcrumbs-home {
     display: -webkit-flex;
 }
 
-#breadcrumbs-home svg {
+#breadcrumbs-home img {
+    height: 1em;
     margin-right: 1rem;
 }
 
@@ -184,6 +186,7 @@ section.features-small {
     
     main > section.features > div:nth-of-type(2) {
         display: unset;
+        height: 100%;
         width: 100%;
         max-width: 40ch;
         min-width: 14em;

@@ -42,6 +42,10 @@ a#home {
     width: 100%;
 }
 
+#home img {
+    height: 1.5em;
+}
+
 div#dropdown-wrapper {
     display: flex;
     display: -webkit-flex;

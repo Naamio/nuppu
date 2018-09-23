@@ -34,6 +34,8 @@ footer > * {
 
 footer > ul.social-box {
     flex: 2 0 auto;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
     list-style: none;
     padding: 0;
 }
@@ -41,6 +43,10 @@ footer > ul.social-box {
 footer > .badge-box {
     align-content: flex-end;
     flex: 0 0 auto;
+}
+
+#naamio-badge {
+    width: 2em;
 }
 
 footer > .contact-button-box {
@@ -63,13 +69,18 @@ ul.social-box a {
     opacity: 0.8;
 }
 
-ul.social-box a svg {
-    margin-right: 1em;
+ul.social-box a img {
+    flex: 0 0 auto;
+    height: 3em;
+    margin-right: 0.5em;
+    padding: 0.5em;
     transition: var(--default-transition-style);
+    width: 3em;
 }
 
-ul.social-box a:hover svg {
-    filter: drop-shadow(0px 0px 5px var(--primary-action-color));
+ul.social-box a:hover img,
+ul.social-box a:active img {
+    filter: drop-shadow(0px 0px 0.4em var(--primary-action-color));
     transition: var(--default-transition-style);
 }
 
