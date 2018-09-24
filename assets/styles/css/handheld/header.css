@@ -75,7 +75,10 @@ div#dropdown-wrapper .button {
     transition: 1s;
 }
 
-.dropdown-button:hover,
+.dropdown-button:hover {
+    background-color: var(--primary-complementary-color);
+}
+
 .dropdown-button:active,
 .dropdown-button.active,
 nav#dropdown-navlist:hover .dropdown-button {
@@ -89,7 +92,7 @@ nav#dropdown-navlist:hover .dropdown-button {
     transition: top 1s, tranform 1s;
 }
 
-@media only screen and (hover: hover) {
+@media (hover: hover) and (min-width: 960px) {    
     .dropdown-button:hover + nav#dropdown-navlist,
     .dropdown-button:active + nav#dropdown-navlist,
     nav#dropdown-navlist:hover {
@@ -170,7 +173,7 @@ header > section {
     flex-grow: 1;
     justify-content: center;
     -webkit-justify-content: center;
-    padding: 8vmmin;
+    padding: 8vmin;
     position: absolute;
     top: 0;
     width: 100%;
