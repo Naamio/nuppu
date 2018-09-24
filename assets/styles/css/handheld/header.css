@@ -184,3 +184,12 @@ header > section {
     padding-right: 2em;
     transition: var(--default-transition-style);
 }
+
+#dropdown-navlist li a {
+    display: block;
+    outline: transparent;
+}
+
+#dropdown-navlist li a:focus {
+    outline: 1px dotted var(--primary-complementary-color);
+}

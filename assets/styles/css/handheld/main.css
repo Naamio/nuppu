@@ -35,7 +35,6 @@ main > section.features > div:nth-of-type(2) {
 main > section.full-width-feature {
     margin-top: 4vmax;
     margin-bottom: 4vmax;
-    min-height: 80vh;
     padding: 0;
 }
 
