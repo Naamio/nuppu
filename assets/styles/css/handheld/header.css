@@ -83,13 +83,20 @@ nav#dropdown-navlist:hover .dropdown-button {
     transition: 1s;
 }
 
-.dropdown-button.active + nav#dropdown-navlist,
-.dropdown-button:hover + nav#dropdown-navlist,
-.dropdown-button:active + nav#dropdown-navlist,
-nav#dropdown-navlist:hover {
+.dropdown-button.active + nav#dropdown-navlist {
     top: 0;
     transform: scaleY(1);
     transition: top 1s, tranform 1s;
+}
+
+@media only screen and (hover: hover) {
+    .dropdown-button:hover + nav#dropdown-navlist,
+    .dropdown-button:active + nav#dropdown-navlist,
+    nav#dropdown-navlist:hover {
+        top: 0;
+        transform: scaleY(1);
+        transition: top 1s, tranform 1s;
+    }
 }
 
 nav#dropdown-navlist {

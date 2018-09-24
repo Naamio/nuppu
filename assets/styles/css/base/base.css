@@ -29,6 +29,7 @@ html {
     font-family: var(--body-font);
     font-size: 14px;
     font-weight: 500;
+    overflow-x: hidden;
 }
 
 body {
