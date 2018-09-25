@@ -1,7 +1,6 @@
 
 let elements = document.querySelectorAll("button.dropdown-button");
 elements.forEach(button => {
-    console.log("Adding event listener to", button);
     button.addEventListener("click", () => {
         if (button.classList.contains("active")) {
             button.classList.remove("active");
