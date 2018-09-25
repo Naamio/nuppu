@@ -3,11 +3,9 @@ logs
 *.log
 
 # Build
-.build/
-.build/*
-lib/*
-.rpt2_cache/
-.rpt2_cache/*
+.build
+lib
+.rpt2_cache
 
 # Raster images
 *.png
@@ -21,7 +19,7 @@ lib/*
 *.woff2
 
 # Dependencies
-node_modules/*
+node_modules
 
 # Runtime data
 pids
@@ -29,11 +27,5 @@ pids
 *.seed
 *.pid.lock
 
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-.build/*
-.build
-
-# Dependency directories
-node_modules/
 
 
