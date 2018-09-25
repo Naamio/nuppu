@@ -9,7 +9,7 @@
     src: local("Montserrat Light Italic"),
         local("Montserrat-lightitalic"),
         local("Montserrat-light-italic");
-    src: url("/assets/styles/fonts/Montserrat/montserrat-lightitalic.woff2") format("woff2");
+    src: url("/assets/styles/fonts/montserrat/montserrat-lightitalic.woff2") format("woff2");
     font-weight: 300;
     font-style: italic;
 }
@@ -18,7 +18,7 @@
     font-family: "Montserrat";
     src: local("Montserrat Regular"),
         local("Montserrat-regular");
-    src: url("/assets/styles/fonts/Montserrat/montserrat-regular.woff2") format("woff2");
+    src: url("/assets/styles/fonts/montserrat/montserrat-regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
 }
@@ -27,7 +27,7 @@
     font-family: "Montserrat";
     src: local("Montserrat Bold"),
         local("Montserrat-bold");
-    src: url("/assets/styles/fonts/Montserrat/montserrat-bold.woff2") format("woff2");
+    src: url("/assets/styles/fonts/montserrat/montserrat-bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
 }
@@ -36,7 +36,7 @@
     font-family: "Montserrat";
     src: local("Montserrat Black"),
         local("Montserrat-black");
-    src: url("/assets/styles/fonts/Montserrat/montserrat-black.woff2") format("woff2");
+    src: url("/assets/styles/fonts/montserrat/montserrat-black.woff2") format("woff2");
     font-weight: 900;
     font-style: normal;
 }
@@ -45,7 +45,7 @@
     font-family: "FiraSans";
     src: local("FiraSans Regular"),
         local("Fira Sans Regular");
-    src: url("/assets/styles/fonts/Montserrat/FiraSans-Regular.woff2") format("woff2");
+    src: url("/assets/styles/fonts/firasans/FiraSans-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
 }
