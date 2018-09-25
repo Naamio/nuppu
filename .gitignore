@@ -17,7 +17,8 @@ lib/*
 *.ico
 
 # Fonts
-*.woff*
+*.woff
+*.woff2
 
 # Dependencies
 node_modules/*
