@@ -1,0 +1,52 @@
+{
+    "version": "3.0.3",
+    "compilerOptions": {
+        /* Basic Options */
+        "target": "es5",
+        "module": "esnext",
+        "lib": [
+            "dom",
+            "es2015",
+            "es2015.promise",
+            "es5",
+            "es6"
+        ],                            
+        "allowJs": false,                      
+        "declaration": true,                  
+        "declarationDir": "lib/types",
+        "sourceMap": true,                    
+        "outDir": "./lib/",                 
+        "removeComments": true,            
+        /* Strict Type-Checking Options */
+        "strict": true, 
+        "noImplicitAny": false,           
+        "strictNullChecks": true,             
+        "strictFunctionTypes": true,          
+        "noImplicitThis": false,              
+        "alwaysStrict": true,                
+        /* Additional Checks */
+        "noUnusedLocals": true,                
+        "noUnusedParameters": true,           
+        "noImplicitReturns": true,            
+        "noFallthroughCasesInSwitch": true,    
+        /* Module Resolution Options */
+        "moduleResolution": "node",            
+        "typeRoots": [
+            "types"
+        ],                       
+        "types": [
+        ],                          
+        "allowSyntheticDefaultImports": true, 
+        "esModuleInterop": true, 
+        /* Source Map Options */
+        "inlineSourceMap": false,              
+        /* Experimental Options */
+        "experimentalDecorators": true,       
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "./node_modules/"
+    ]
+}

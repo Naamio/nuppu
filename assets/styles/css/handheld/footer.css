@@ -1,32 +1,90 @@
 /**
  * footer.css
  * Project: Nuppu
- * Omnijar Studio
+ * Naamio
  */
  
 footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    -webkit-align-items: center;
+    background-color: var(--dark-neutral-color);
+    color: var(--light-neutral-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    -webkit-justify-items: center;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
+    max-width: 100%;
+    padding: 10vmin;
 }
 
 footer > * {
-    border-top: var(--border-style);
-    grid-column: span 10 / 12;
-    padding-bottom: 3em;
-    padding-top: 3em;
-}
-
-footer a {
     align-items: center;
+    -webkit-align-items: center;
     display: flex;
     display: -webkit-flex;
-    justify-content: space-around;
-    margin: auto;
-    max-width: 20em;
+    flex: 0 0 auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin: 2em;
     width: 100%;
 }
 
-footer svg {
-    height: 6em;
-    width: auto;
+footer > ul.social-box {
+    flex: 2 0 auto;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+
+footer > .badge-box {
+    align-content: flex-end;
+    flex: 0 0 auto;
+}
+
+#naamio-badge {
+    width: 2em;
+}
+
+footer > .contact-button-box {
+    flex: 0 0 auto;
+}
+
+ul.social-box a {
+    align-items: center;
+    -webkit-align-items: center;
+    color: var(--light-neutral-color);
+    cursor: pointer;
+    display: flex;
+    display: -webkit-flex;
+    font-size: 0.8em;
+    font-weight: 400;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    letter-spacing: 0.1em;
+    margin: 2em 0.5em;
+    opacity: 0.8;
+}
+
+ul.social-box a img {
+    flex: 0 0 auto;
+    height: 3em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    transition: var(--default-transition-style);
+    width: 3em;
+}
+
+ul.social-box a:hover img,
+ul.social-box a:active img {
+    filter: drop-shadow(0px 0px 0.4em var(--primary-action-color));
+    transition: var(--default-transition-style);
+}
+
+footer a.button {
+    background-color: transparent;
+    color: var(--primary-action-color);
 }

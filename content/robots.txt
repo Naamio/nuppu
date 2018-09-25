@@ -1,0 +1,56 @@
+#
+# As always, Asimov's Three Laws are in effect:
+# 1. A robot may not injure a human being or, through inaction, allow a human
+#    being to come to harm.
+# 2. A robot must obey orders given it by human beings except where such
+#    orders would conflict with the First Law.
+# 3. A robot must protect its own existence as long as such protection does
+#    not conflict with the First or Second Law.
+
+User-Agent: Googlebot
+Disallow: /contact/thanks.html
+
+User-Agent: Googlebot-Mobile
+Disallow: /contact/thanks.html
+
+User-Agent: Mediapartners-Google
+Disallow: /contact/thanks.html
+
+User-Agent: AdsBot-Google
+Disallow: /contact
+
+User-Agent: bingbot
+Disallow: /contact/thanks.html
+
+User-Agent: msnbot
+Disallow: /contact/thanks.html
+
+User-Agent: BingPreview
+Disallow: /contact/thanks.html
+
+User-Agent: Applebot
+Disallow: /contact/thanks.html
+
+User-Agent: Yahoo! Slurp
+Disallow: /contact/thanks.html
+
+User-Agent: Twitterbot
+Disallow: /contact/thanks.html
+
+User-Agent: TelegramBot
+Disallow: /contact/thanks.html
+
+User-Agent: archive.org_bot
+Disallow: /contact/thanks.html
+
+User-Agent: ia_archiver
+Disallow: /contact/thanks.html
+
+User-Agent: ScoutJet
+Disallow: /contact/thanks.html
+
+User-Agent: SeznamBot
+Disallow: /contact/thanks.html
+
+User-Agent: *
+Disallow: /contact/thanks.html

@@ -1,18 +1,16 @@
 /**
  * screen/footer.css
  * Project: Nuppu
- * Omnijar Studio
+ * Naamio
  */
 
-@media (min-width: 670px) {
-    
-    footer {
-        grid-column-gap: 1em;
-        padding-left: calc(50vw - 520px);
-        padding-right: calc(50vw - 520px);
+@media (min-width: 667px) {
+    footer > * {
+        width: unset;
     }
 
-    footer > * {
-        grid-column: span 8 / 11;
+    footer > ul.social-box {
+        flex: 0 0 50%;
     }
+
 }

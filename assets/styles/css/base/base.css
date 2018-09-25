@@ -1,217 +1,116 @@
 /**
  * base.css
  * Project: Nuppu
- * Omnijar Studio
+ * Naamio
  */
 
 :root {
-    --sans-serif-font: "Montserrat", Arial, Helvetica, sans-serif;
-    --text-color: rgba(139,139,139,1);
-    --strong-text-color: rgba(102,102,102,1);
-    --grey-border-color: rgba(236,236,236,1);
-    --soft-background-color: rgba(242,242,242,1);
-    --primary-action-color: rgba(0,179,170,1);
-    --primary-complimentary-color: rgba(0,184,230,1);
-    --primary-background-color: rgba(0,115,230,1);
-    --secondary-complimentary-color: rgba(0,137,179,1);
-    --secondary-background-color: rgba(0,89,179,1);
-    --border-style: 2px solid var(--soft-background-color);
-    --input-border-style: 1px solid var(--grey-border-color);
-    --border-radius: 0.2em;
+    --title-font: "Montserrat", Arial, Helvetica, sans-serif;
+    --body-font: "Fira Sans", Arial, Helvetica, sans-serif;
+    --light-neutral-color: rgba(255,255,255,1);
+    --dark-neutral-color: rgba(9,0,22,1);
+    --mid-dark-neutral-color: rgba(62,57,70,1);
+    --primary-brand-color: rgba(22,84,220,1);
+    --primary-complementary-color: rgba(98,0,234,1);
+    --primary-action-color: rgba(22,240,175,1);
+    --warning-color: rgba(240,29,20,1);
+    --alert-color: rgba(240,175,22,1);
+    --brand-gradient: linear-gradient(45deg, rgba(22,240,175,1) 0%,rgba(22,84,220,1) 50%,rgba(90,0,234,1) 100%);
+    --border-radius: 0;
+    --border-width: 1px;
+    --input-border-color: var(--dark-neutral-color);
+    --button-border-color: var(--primary-action-color);
+    --default-transition-style: 0.3s linear;
+    --drop-shadow: 1px 1px 0 var(--dark-neutral-color);
+    
 }
 
 html {
-    font-family: var(--sans-serif-font);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-body {
-    margin: 0;
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 500;
     overflow-x: hidden;
 }
 
-h1 {
-    margin-top: auto;
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Typography 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1, h2, h3, h4 {
+    font-family: var(--title-font);
+    line-height: 1.3;
+}
+
+header h1 {
+    color: var(--light-neutral-color);
     text-align: center;
 }
 
-svg {
-    height: auto;
-    max-width: 5em;
-}
-
-header svg {
-    max-width: 3.4em;
-}
-
-h1, h2, h3 {
-    font-weight: 900;
-    line-height: 1.1;
-    text-transform: uppercase;
-}
-
 h1 {
-    color: white;
-    font-size: 2.3em;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 h2 {
-    color: var(--primary-background-color);
-    font-size: 2.3em;
-}
-
-label {
-    color: var(--primary-action-color);
-    display: flex;
-    font-size: 0.8em;
-    font-style: italic;
+    color: var(--mid-dark-neutral-color);
     font-weight: 300;
-    position: relative;
-    width: 100%;
-}
-
-legend {
-    color: var(--strong-text-color);
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
-    text-align: center;
-    text-transform: initial; 
 }
 
 h3 {
-    color: var(--primary-complimentary-color);
-    font-size: 1em;
+    color: var(--dark-neutral-color);
 }
 
-blockquote {
-    border-left: 3.5px dashed var(--primary-action-color);
-    font-size: 1em;
-    font-style: italic;
-    font-weight: 300;
-    margin-bottom: 6em;
-    margin-left: 8.33%;
-    margin-right: 8.33%;
-    padding-left: 1em;
-}
-
-button {
-    background-color: white;
-    border: none;
-    border-radius: var(--border-radius);
-    color: var(--primary-action-color);
-    cursor: pointer;
-    height: 3.2em;
-    font-size: 1em;
+h3, h4 {
     font-weight: 700;
-    line-height: 1;
-    min-width: 10rem;
-    padding: 0.6em 2em 0.4em 2rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
-button:hover {
-    background-color: var(--primary-action-color);
-    color: white;
+p {
+    color: var(--mid-dark-neutral-color);
+    line-height: 1.45;
+    max-width: 56ch;
 }
 
-
-form {
-    background-color: var(--soft-background-color);
-    border: none;
-    width: 100%;
+a {
+    color: var(--primary-brand-color);
+    text-decoration: none;
 }
 
-form button {
-    background-color: var(--primary-action-color);
-    color: white;
-    margin-top: 2em;
-    position: relative;
-    padding: 0;
-    transition: 0.3s;
+a, abbr, blockquote, details, figure, input, mark, option, optgroup, p, pre, span, sub, sup, textarea {
+    font-weight: 300;
 }
 
-form button:hover {
-    background-color: var(--primary-background-color);
-    transition: 0.3s;
-}
-
-form button:active {
-    background-color: var(--secondary-background-color);
-    transition: 0.3s;
-}
-
-button p {
-    box-sizing: border-box;
-    line-height: 2.2;
-    margin: 0;
-    padding: 0.6em 2em 0.4em 2rem; 
-    width: 100%;
-}
-
-button p,
-button:hover p {
-    transition: 0.3s;
-}
-
-fieldset button {
-    width: 100%;
-}
-
-fieldset {
-    border: none;
-    padding-bottom: 3em;
-    padding-top: 2em;
-    padding-left: calc(100vw/12);
-    padding-right: calc(100vw/12);
-}
-
-input,
-textarea {
-    background-color: rgba(255,255,255,0.8);
-    border: var(--input-border-style);
-    border-radius: var(--border-radius);
-    box-sizing: border-box;
-    color: var(--text-color);
-    cursor: text;
-    height: 3.2em;
-    font-family: var(--sans-serif-font);
-    font-size: 0.8em;
-    font-weight: 400;
-    line-height: 1;
-    margin-bottom: 1em;
-    min-width: 10rem;
-    padding: 1em 1em;
-    position: relative;
-    width: 100%;
-}
-
-input:focus,
-input:active,
-textarea:focus,
-textarea:active {
-    background-color: rgba(255,255,255,1);
-}
-
-label.required::after {
-    color: var(--primary-action-color);
-    content: "*";
-    font-size: 2.3em;
-    font-style: normal;
+b, strong {
+    color: var(--dark-neutral-color);
     font-weight: 700;
-    left: calc(100% - 0.8em);
-    position: absolute;
-    top: 0.8em;
-    z-index: 2;
 }
 
-textarea {
-    line-height: 1.5;
-    min-height: 6.4em;
-    resize: vertical;
+em {
+    font-style: italic;
+}
+
+label {
+    font-size: 0.8em;
+}
+
+blockquote {
+    color: var(--mid-dark-neutral-color);
+    font-family: var(--title-font);
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 6em 10vmin 4em 10vmin;
+    max-width: 56ch;
+    text-align: center;
 }

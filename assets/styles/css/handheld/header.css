@@ -1,31 +1,195 @@
 /**
  * header.css
  * Project: Nuppu
- * Omnijar Studio
+ * Naamio
  */
- 
-header button {
-    display: none;
-    visibility: hidden;
-}
 
 header {
-    background: var(--primary-complimentary-color);
-    background: linear-gradient(20deg, var(--primary-action-color) -20%, var(--primary-background-color) 50%, var(--primary-complimentary-color) 110%);
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    min-height: 50vh;
-}
-
-header > * {
-    grid-column: span 10 / 12;
-}
-
-header section {
-    align-items: flex-start;
+    background-image: var(--brand-gradient);
     display: flex;
     display: -webkit-flex;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    height: 70vh;
+    min-height: 28em;
+}
+
+header h2 {
+    color: var(--light-neutral-color);
+    filter: drop-shadow(1px 1px 0.5px var(--primary-complementary-color));
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 0 auto;
+    height: 4em;
     justify-content: space-between;
-    margin-bottom: 3em;
-    margin-top: 3em;
+    -webkit-justify-content: space-between;
+    z-index: 2;
+}
+
+a#home {
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    height: 4em;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 6em;
+    min-width: 4em;
+    width: 100%;
+}
+
+#home img {
+    height: 1.5em;
+}
+
+div#dropdown-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    flex: 2 0 auto;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+div#dropdown-wrapper button,
+div#dropdown-wrapper .button {
+    height: 100%;
+    max-width: 10em;
+    min-width: unset;
+    width: 50%;
+    z-index: 3;
+}
+
+.dropdown-button {
+    background-color: transparent;
+}
+
+.dropdown-button,
+.dropdown-button:hover,
+.dropdown-button:active {
+    border-color: transparent;
+    color: var(--light-neutral-color);
+    transition: 1s;
+}
+
+.dropdown-button:hover {
+    background-color: var(--primary-complementary-color);
+}
+
+.dropdown-button:active,
+.dropdown-button.active,
+nav#dropdown-navlist:hover .dropdown-button {
+    background-color: var(--dark-neutral-color);
+    transition: 1s;
+}
+
+.dropdown-button.active + nav#dropdown-navlist {
+    top: 0;
+    transform: scaleY(1);
+    transition: top 1s, tranform 1s;
+}
+
+@media (hover: hover) and (min-width: 960px) {    
+    .dropdown-button:hover + nav#dropdown-navlist,
+    .dropdown-button:active + nav#dropdown-navlist,
+    nav#dropdown-navlist:hover {
+        top: 0;
+        transform: scaleY(1);
+        transition: top 1s, tranform 1s;
+    }
+}
+
+nav#dropdown-navlist {
+    background-color: var(--dark-neutral-color);
+    display: block;
+    margin-top: 0;
+    min-height: 100vh;
+    overflow-y: scroll;
+    padding: 4em 2em 2em 2em;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: -100vh;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: top 2s, transform 2s;
+    z-index: 2;
+}
+
+nav#dropdown-navlist ul {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2em;
+    padding: 0;
+    width: 100%;
+}
+
+#dropdown-navlist li {
+    margin-bottom: 4em;
+}
+
+#dropdown-navlist li:last-of-type {
+    padding-bottom: 4em;
+}
+
+@supports (display: grid) {
+    nav#dropdown-navlist ul {
+        align-content: flex-start;
+        -webkit-align-content: flex-start;
+        display: grid;
+        grid-gap: 10%;
+    }
+
+    #dropdown-navlist li {
+        margin-bottom: 0;
+    }
+}
+
+nav#dropdown-navlist a h3 {
+    color: var(--primary-action-color);
+    margin-bottom: 0;
+    padding-right: 0;
+    transition: var(--default-transition-style);
+}
+
+nav#dropdown-navlist p {
+    color: var(--light-neutral-color);
+    margin-top: 0.5em;
+    opacity: 0.8;
+}
+
+header > section {
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+    height: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding: 8vmin;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#dropdown-navlist a:hover h3 {
+    color: var(--primary-complementary-color);
+    padding-right: 2em;
+    transition: var(--default-transition-style);
+}
+
+#dropdown-navlist li a {
+    display: block;
+    outline: transparent;
+}
+
+#dropdown-navlist li a:focus {
+    outline: 1px dotted var(--primary-complementary-color);
 }
