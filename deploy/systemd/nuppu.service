@@ -1,0 +1,28 @@
+[Unit]
+Description=Front-end web application for Naamio Cloud.
+Documentation=https://naamio.cloud
+After=docker.service
+Requires=docker.service
+
+[Service]
+Environment=NAAMIO_PORT=8090
+Type=simple
+RemainAfterExit=true
+Restart=on-failure
+RestartSec=10
+ExecStartPre=-/usr/bin/docker rm -f nuppu
+ExecStartPre=-/usr/bin/docker pull registry.gitlab.com/naamio/nuppu:nightly
+ExecStartPre=-/usr/bin/unzip -o /root/assets.zip -d /root/
+ExecStart=/usr/bin/docker run -d \
+            --name nuppu \
+            --restart always \
+            --network naamio-net \
+            -v /var/log/naamio:/var/log/naamio \
+            -v /root/content:/usr/share/naamio/nuppu/content \
+            -v /root/fonts:/usr/share/naamio/nuppu/assets/styles/fonts \
+            -v /root/images/rasters:/usr/share/naamio/nuppu/assets/images/rasters \
+            registry.gitlab.com/naamio/nuppu:nightly
+ExecStop=/usr/bin/docker stop nuppu
+
+[Install]
+WantedBy=multi-user.target
